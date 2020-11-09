@@ -1,6 +1,6 @@
-package com.omgard.spiritualtravels.init;
+package com.omgard.ritecraft.init;
 
-import com.omgard.spiritualtravels.Main;
+import com.omgard.ritecraft.Main;
 
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.registries.DeferredRegister;
