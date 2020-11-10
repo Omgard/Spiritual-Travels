@@ -15,7 +15,7 @@ public class ModItems {
 	public static final RegistryObject<Item> SILVER_INGOT = Registration.ITEMS.register("silver_ingot", ItemBase::new);	
 	public static final RegistryObject<Item> TEA_LEAVES = Registration.ITEMS.register("tea_leaves", ItemBase::new);	
 	public static final RegistryObject<Item> WARTHOG_TUSK = Registration.ITEMS.register("warthog_tusk", ItemBase::new);
-	
+	public static final RegistryObject<Item> BLUEBERRY = Registration.ITEMS.register("blueberry", ItemBase::new);
 	
 	//ARMOR MATERIAL IS FUCKED, somethingsomething enum bad
 	// Armor

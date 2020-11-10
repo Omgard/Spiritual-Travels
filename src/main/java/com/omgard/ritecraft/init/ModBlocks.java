@@ -21,6 +21,8 @@ public class ModBlocks {
 	            new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).harvestLevel(2).sound(SoundType.STONE)));
 	    public static final RegistryObject<Block> SILVER_BLOCK = registerWithItem("silver_block", () ->
 	            new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL)));
+	    public static final RegistryObject<Block> DARK_GRASS_BLOCK = registerWithItem("dark_grass_block", () ->
+	    		new Block(Block.Properties.create(Material.EARTH).hardnessAndResistance(3, 10).sound(SoundType.WET_GRASS)));
 	    
 	    
 	    static void register() {}

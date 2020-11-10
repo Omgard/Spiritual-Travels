@@ -20,6 +20,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		
 		withExistingParent("silver_block", modLoc("block/silver_block"));
 		withExistingParent("silver_ore", modLoc("block/silver_ore"));
+		//withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
 		
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 		
@@ -27,6 +28,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "silver_ingot");
 		builder(itemGenerated, "tea_leaves");
 		builder(itemGenerated, "warthog_tusk");
+		builder(itemGenerated, "blueberry");
 		
 		
 		
