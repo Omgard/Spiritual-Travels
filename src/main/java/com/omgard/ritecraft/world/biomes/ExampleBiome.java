@@ -5,6 +5,8 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.world.biome.Biome;
 
 public class ExampleBiome extends Biome {
+	
+	//DefaultBiomeFeatures
 
 	public ExampleBiome(Builder biomeBuilder) { 
 		super(new Biome.Builder()				);
@@ -12,7 +14,8 @@ public class ExampleBiome extends Biome {
 				
 				
 				
-				;
+				
+				
 	}
 	
 
