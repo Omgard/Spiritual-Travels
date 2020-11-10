@@ -25,7 +25,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 		
 		
 		builder(itemGenerated, "silver_ingot");
-		
+		builder(itemGenerated, "tea_leaves");
+		builder(itemGenerated, "warthog_tusk");
 		
 		
 		

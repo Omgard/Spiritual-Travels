@@ -3,11 +3,11 @@ package com.omgard.ritecraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.omgard.ritecraft.init.ModItems;
 import com.omgard.ritecraft.init.Registration;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 
@@ -23,7 +23,7 @@ public class Main
 	
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(Items.STICK.getItem());
+			return new ItemStack(ModItems.TEA_LEAVES.get());
 		}
 	};
 

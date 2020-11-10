@@ -13,6 +13,8 @@ import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 @Mod.EventBusSubscriber(modid = Main.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public final class DataGenerators {
     private DataGenerators() {}
+    
+    //BlockModelProvider
 
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {

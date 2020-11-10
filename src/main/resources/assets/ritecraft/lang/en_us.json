@@ -1,8 +1,9 @@
 {
-	"itemGroup.ritecraft.ritecrafttab": "Ritecraft",
+	"itemGroup.ritecrafttab": "Ritecraft",
 	
 	
 	"item.ritecraft.silver_ingot": "Silver Ingot",	
+	"item.ritecraft.tea_leaves": "Tea Leaves",
 	
 	
 	"block.ritecraft.silver_ore": "Silver Ore",
