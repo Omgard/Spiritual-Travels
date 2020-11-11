@@ -9,7 +9,12 @@
 	
 	
 	"block.ritecraft.silver_ore": "Silver Ore",
-	"block.ritecraft.silver_block": "Block of Silver"
+	"block.ritecraft.silver_block": "Block of Silver",
+	
+	
+	"entity.ritecraft.warthog": "Warthog"
+	
+	
 	
 	
 }

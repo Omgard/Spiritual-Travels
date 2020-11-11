@@ -3,6 +3,7 @@ package com.omgard.ritecraft.init;
 import com.omgard.ritecraft.Main;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,6 +16,7 @@ public class Registration {
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Main.MOD_ID);
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Main.MOD_ID);
 	public static final DeferredRegister<Biome> BIOMES = new DeferredRegister<>(ForgeRegistries.BIOMES, Main.MOD_ID);
+	public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.ENTITIES, Main.MOD_ID);
 
     public static void register() {
         
@@ -26,6 +28,7 @@ public class Registration {
         ModBlocks.register();
         ModItems.register();
         ModBiomes.register();
+        ModEntityTypes.register();
 
     }
 }
