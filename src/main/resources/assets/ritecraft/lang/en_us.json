@@ -11,8 +11,14 @@
 	"item.ritecraft.stoneshroom": "Stoneshroom",
 	"item.ritecraft.seeshroom": "Seeshroom",
 	"item.ritecraft.empty_cup": "Tea Cup",
-	"item.ritecraft.cup_of_tea": "Cup of Tea",
+	"item.ritecraft.blueberry_tea": "Blueberry Tea",
 	"item.ritecraft.sunleaf": "Sunleaf",
+	"item.ritecraft.chaos_tea": "Chaos Tea",
+	"item.ritecraft.common_blueleaf": "Common Blueleaf",
+	"item.ritecraft.mutated_elksbloom": "Mutated Elksbloom",
+	"item.ritecraft.elksbloom": "Elksbloom",
+	"item.ritecraft.vision_tea": "Vision Tea",
+	
 	
 	"item.ritecraft.warthog_helmet": "Warthog Cap",
 	"item.ritecraft.warthog_chestplate": "Warthog Tunic",
@@ -22,6 +28,11 @@
 	
 	"block.ritecraft.silver_ore": "Silver Ore",
 	"block.ritecraft.silver_block": "Block of Silver",
+	"block.ritecraft.dark_dirt": "Dark Dirt",
+	"block.ritecraft.dark_grass_block": "Dark Grass block",
+	"block.ritecraft.plague_fir_log": "Plague Fir Log",
+	"block.ritecraft.plague_fir_planks": "Plague Fir Planks",
+	"block.ritecraft.plague_for_leaves": "Plague Fir Leaves",
 	
 	
 	"entity.ritecraft.warthog": "Warthog"

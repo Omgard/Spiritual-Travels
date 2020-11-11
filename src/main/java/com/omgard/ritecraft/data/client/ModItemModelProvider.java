@@ -21,8 +21,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 		// Block Items
 		withExistingParent("silver_block", modLoc("block/silver_block"));
 		withExistingParent("silver_ore", modLoc("block/silver_ore"));
-		// withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
-		withExistingParent("blueberry_bush", modLoc("block/blueberry_bush"));
+		withExistingParent("dark_dirt", modLoc("block/dark_dirt"));
+		withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
+		withExistingParent("plague_fir_log", modLoc("block/plague_fir_log"));
+		withExistingParent("plague_fir_planks", modLoc("block/plague_fir_planks"));
+		withExistingParent("plague_fir_leaves", modLoc("block/plague_fir_leaves"));
 
 		// Model files
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
@@ -37,12 +40,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "seeshroom");
 		builder(itemGenerated, "stoneshroom");
 		builder(itemGenerated, "empty_cup");
-		builder(itemGenerated, "cup_of_tea");
+		builder(itemGenerated, "blueberry_tea");
 		builder(itemGenerated, "warthog_helmet");
 		builder(itemGenerated, "warthog_chestplate");
 		builder(itemGenerated, "warthog_leggings");
 		builder(itemGenerated, "warthog_boots");
 		builder(itemGenerated, "sunleaf");
+		builder(itemGenerated, "chaos_tea");
+		builder(itemGenerated, "mutated_elksbloom");
+		builder(itemGenerated, "common_blueleaf");
+		builder(itemGenerated, "elksbloom");
+		builder(itemGenerated, "vision_tea");
 
 	}
 

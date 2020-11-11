@@ -22,8 +22,16 @@ public class ModItems {
 	public static final RegistryObject<Item> SEESHROOM = Registration.ITEMS.register("seeshroom", ItemBase::new);
 	public static final RegistryObject<Item> STONESHROOM = Registration.ITEMS.register("stoneshroom", ItemBase::new);
 	public static final RegistryObject<Item> EMPTY_CUP = Registration.ITEMS.register("empty_cup", ItemBase::new);
-	public static final RegistryObject<Item> CUP_OF_TEA = Registration.ITEMS.register("cup_of_tea", CupOfTea::new);
+	public static final RegistryObject<Item> BLUEBERRY_TEA = Registration.ITEMS.register("blueberry_tea", CupOfTea::new);
 	public static final RegistryObject<Item> SUNLEAF = Registration.ITEMS.register("sunleaf", ItemBase::new);
+	public static final RegistryObject<Item> CHAOS_TEA = Registration.ITEMS.register("chaos_tea", CupOfTea::new);
+	public static final RegistryObject<Item> MUTATED_ELKSBLOOM = Registration.ITEMS.register("mutated_elksbloom", ItemBase::new);
+	public static final RegistryObject<Item> COMMON_BLUELEAF = Registration.ITEMS.register("common_blueleaf", ItemBase::new);
+	public static final RegistryObject<Item> ELKSBLOOM = Registration.ITEMS.register("elksbloom", ItemBase::new);
+	public static final RegistryObject<Item> VISION_TEA = Registration.ITEMS.register("vision_tea", CupOfTea::new);
+	
+	
+	
 
 	// Armor
 	public static final RegistryObject<ArmorItem> WARTHOG_HELMET = Registration.ITEMS.register("warthog_helmet",

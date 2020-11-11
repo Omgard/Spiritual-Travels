@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "ritecraft:dark_grass_block" },
+            { "model": "ritecraft:dark_grass_block", "y": 90 },
+            { "model": "ritecraft:dark_grass_block", "y": 180 },
+            { "model": "ritecraft:dark_grass_block", "y": 270 }
+        ]
+    }
+}

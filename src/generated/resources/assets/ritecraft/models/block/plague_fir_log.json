@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "ritecraft:block/plague_fir_log",
+    "end": "ritecraft:block/plague_fir_log_top"
+  }
+}

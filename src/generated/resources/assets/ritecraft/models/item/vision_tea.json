@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ritecraft:item/cup_of_tea"
+    "layer0": "ritecraft:item/vision_tea"
   }
 }

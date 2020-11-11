@@ -2,10 +2,12 @@ package com.omgard.ritecraft.objects.blocks;
 
 import java.util.Random;
 
+import com.omgard.ritecraft.init.ModBlocks;
 import com.omgard.ritecraft.init.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BushBlock;
 import net.minecraft.block.IGrowable;
 import net.minecraft.entity.player.PlayerEntity;
@@ -27,71 +29,83 @@ import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 
 public class BlueberryBushBlock extends BushBlock implements IGrowable {
-	   public static final IntegerProperty AGE = BlockStateProperties.AGE_0_3;
-	   private static final VoxelShape field_220126_b = Block.makeCuboidShape(3.0D, 0.0D, 3.0D, 13.0D, 8.0D, 13.0D);
-	   private static final VoxelShape field_220127_c = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 16.0D, 15.0D);
+	public static final IntegerProperty AGE = BlockStateProperties.AGE_0_3;
+	private static final VoxelShape field_220126_b = Block.makeCuboidShape(3.0D, 0.0D, 3.0D, 13.0D, 8.0D, 13.0D);
+	private static final VoxelShape field_220127_c = Block.makeCuboidShape(1.0D, 0.0D, 1.0D, 15.0D, 16.0D, 15.0D);
+	
+	
 
-	   public BlueberryBushBlock(Block.Properties properties) {
-	      super(properties);
-	      this.setDefaultState(this.stateContainer.getBaseState().with(AGE, Integer.valueOf(0)));
-	   }
+	@Override
+	protected boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+		Block block = state.getBlock();
+		return block == Blocks.GRASS_BLOCK || block == Blocks.DIRT || block == Blocks.COARSE_DIRT
+				|| block == Blocks.PODZOL || block == Blocks.FARMLAND || block == ModBlocks.DARK_DIRT.get()
+				|| block == ModBlocks.DARK_GRASS_BLOCK.get();
+	} 
 
-	   public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
-	      return new ItemStack(ModItems.BLUEBERRY.get());
-	   }
+	public BlueberryBushBlock(Block.Properties properties) {
+		super(properties);
+		this.setDefaultState(this.stateContainer.getBaseState().with(AGE, Integer.valueOf(0)));
+	}
 
-	   public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
-	      if (state.get(AGE) == 0) {
-	         return field_220126_b;
-	      } else {
-	         return state.get(AGE) < 3 ? field_220127_c : super.getShape(state, worldIn, pos, context);
-	      }
-	   }
+	public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
+		return new ItemStack(ModItems.BLUEBERRY.get());
+	}
 
-	   public void tick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
-	      super.tick(state, worldIn, pos, rand);
-	      int i = state.get(AGE);
-	      if (i < 3 && worldIn.getLightSubtracted(pos.up(), 0) >= 9 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(worldIn, pos, state, rand.nextInt(5) == 0)) {
-	         worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(i + 1)), 2);
-	         net.minecraftforge.common.ForgeHooks.onCropsGrowPost(worldIn, pos, state);
-	      }
+	public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+		if (state.get(AGE) == 0) {
+			return field_220126_b;
+		} else {
+			return state.get(AGE) < 3 ? field_220127_c : super.getShape(state, worldIn, pos, context);
+		}
+	}
 
-	   }
+	public void tick(BlockState state, ServerWorld worldIn, BlockPos pos, Random rand) {
+		super.tick(state, worldIn, pos, rand);
+		int i = state.get(AGE);
+		if (i < 3 && worldIn.getLightSubtracted(pos.up(), 0) >= 9
+				&& net.minecraftforge.common.ForgeHooks.onCropsGrowPre(worldIn, pos, state, rand.nextInt(5) == 0)) {
+			worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(i + 1)), 2);
+			net.minecraftforge.common.ForgeHooks.onCropsGrowPost(worldIn, pos, state);
+		}
 
+	}
 
-	   public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-	      int i = state.get(AGE);
-	      boolean flag = i == 3;
-	      if (!flag && player.getHeldItem(handIn).getItem() == Items.BONE_MEAL) {
-	         return ActionResultType.PASS;
-	      } else if (i > 1) {
-	         int j = 1 + worldIn.rand.nextInt(2);
-	         spawnAsEntity(worldIn, pos, new ItemStack(ModItems.BLUEBERRY.get(), j + (flag ? 1 : 0)));
-	         worldIn.playSound((PlayerEntity)null, pos, SoundEvents.ITEM_SWEET_BERRIES_PICK_FROM_BUSH, SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.rand.nextFloat() * 0.4F);
-	         worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(1)), 2);
-	         return ActionResultType.SUCCESS;
-	      } else {
-	         return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
-	      }
-	   }
+	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player,
+			Hand handIn, BlockRayTraceResult hit) {
+		int i = state.get(AGE);
+		boolean flag = i == 3;
+		if (!flag && player.getHeldItem(handIn).getItem() == Items.BONE_MEAL) {
+			return ActionResultType.PASS;
+		} else if (i > 1) {
+			int j = 1 + worldIn.rand.nextInt(2);
+			spawnAsEntity(worldIn, pos, new ItemStack(ModItems.BLUEBERRY.get(), j + (flag ? 1 : 0)));
+			worldIn.playSound((PlayerEntity) null, pos, SoundEvents.ITEM_SWEET_BERRIES_PICK_FROM_BUSH,
+					SoundCategory.BLOCKS, 1.0F, 0.8F + worldIn.rand.nextFloat() * 0.4F);
+			worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(1)), 2);
+			return ActionResultType.SUCCESS;
+		} else {
+			return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
+		}
+	}
 
-	   protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-	      builder.add(AGE);
-	   }
+	protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
+		builder.add(AGE);
+	}
 
-	   /**
-	    * Whether this IGrowable can grow
-	    */
-	   public boolean canGrow(IBlockReader worldIn, BlockPos pos, BlockState state, boolean isClient) {
-	      return state.get(AGE) < 3;
-	   }
+	/**
+	 * Whether this IGrowable can grow
+	 */
+	public boolean canGrow(IBlockReader worldIn, BlockPos pos, BlockState state, boolean isClient) {
+		return state.get(AGE) < 3;
+	}
 
-	   public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, BlockState state) {
-	      return true;
-	   }
+	public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, BlockState state) {
+		return true;
+	}
 
-	   public void grow(ServerWorld worldIn, Random rand, BlockPos pos, BlockState state) {
-	      int i = Math.min(3, state.get(AGE) + 1);
-	      worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(i)), 2);
-	   }
+	public void grow(ServerWorld worldIn, Random rand, BlockPos pos, BlockState state) {
+		int i = Math.min(3, state.get(AGE) + 1);
+		worldIn.setBlockState(pos, state.with(AGE, Integer.valueOf(i)), 2);
+	}
 }

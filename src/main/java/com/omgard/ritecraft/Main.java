@@ -3,9 +3,12 @@ package com.omgard.ritecraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.omgard.ritecraft.init.ModBlocks;
 import com.omgard.ritecraft.init.ModItems;
 import com.omgard.ritecraft.init.Registration;
 
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -46,6 +49,8 @@ public class Main
 	}
 	
 	private void doClientStuff(final FMLClientSetupEvent event) {
+		RenderTypeLookup.setRenderLayer(ModBlocks.PLAGUE_FIR_SAPLING.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.BLUEBERRY_BUSH_BLOCK.get(), RenderType.getCutout());
 		
 	}
 	

@@ -23,8 +23,11 @@ public class Registration {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         
         BLOCKS.register(modEventBus);
+        Main.LOGGER.debug("Registered Blocks!");
         ITEMS.register(modEventBus);
+        Main.LOGGER.debug("Registered Items!");
         ENTITY_TYPES.register(modEventBus);
+        Main.LOGGER.debug("Registered Entities!");
         
         //BIOMES.register(modEventBus);
 
