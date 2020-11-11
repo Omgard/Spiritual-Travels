@@ -37,6 +37,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "owl_feather");
 		builder(itemGenerated, "seeshroom");
 		builder(itemGenerated, "stoneshroom");
+		builder(itemGenerated, "empty_cup");
+		builder(itemGenerated, "cup_of_tea");
+		builder(itemGenerated, "warthog_helmet");
+		builder(itemGenerated, "warthog_chestplate");
+		builder(itemGenerated, "warthog_leggings");
+		builder(itemGenerated, "warthog_boots");
 		
 		
 		
