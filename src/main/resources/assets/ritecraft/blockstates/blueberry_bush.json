@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "age=0": { "model": "ritecraft:block/blueberry_bush_harvested" },
+        "age=1": { "model": "ritecraft:block/blueberry_bush" }
+    }
+}

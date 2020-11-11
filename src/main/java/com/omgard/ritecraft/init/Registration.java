@@ -24,6 +24,9 @@ public class Registration {
         
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
+        ENTITY_TYPES.register(modEventBus);
+        
+        //BIOMES.register(modEventBus);
 
         ModBlocks.register();
         ModItems.register();

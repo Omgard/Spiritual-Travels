@@ -18,17 +18,26 @@ public class ModItemModelProvider extends ItemModelProvider {
 	@Override
 	protected void registerModels() {
 		
+		// Block Items
 		withExistingParent("silver_block", modLoc("block/silver_block"));
 		withExistingParent("silver_ore", modLoc("block/silver_ore"));
 		//withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
+		//withExistingParent("blueberry_bush", modLoc("block/blueberry_bush"));
 		
+		
+		// Model files
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 		
-		
+		// Items
 		builder(itemGenerated, "silver_ingot");
 		builder(itemGenerated, "tea_leaves");
 		builder(itemGenerated, "warthog_tusk");
 		builder(itemGenerated, "blueberry");
+		builder(itemGenerated, "blueshroom");
+		builder(itemGenerated, "owl_feather");
+		builder(itemGenerated, "seeshroom");
+		builder(itemGenerated, "stoneshroom");
+		
 		
 		
 		

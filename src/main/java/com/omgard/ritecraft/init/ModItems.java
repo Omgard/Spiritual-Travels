@@ -1,6 +1,6 @@
 package com.omgard.ritecraft.init;
 
-import com.omgard.ritecraft.data.base.ItemBase;
+import com.omgard.ritecraft.objects.items.ItemBase;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
@@ -16,6 +16,10 @@ public class ModItems {
 	public static final RegistryObject<Item> TEA_LEAVES = Registration.ITEMS.register("tea_leaves", ItemBase::new);	
 	public static final RegistryObject<Item> WARTHOG_TUSK = Registration.ITEMS.register("warthog_tusk", ItemBase::new);
 	public static final RegistryObject<Item> BLUEBERRY = Registration.ITEMS.register("blueberry", ItemBase::new);
+	public static final RegistryObject<Item> BLUESHROOM = Registration.ITEMS.register("blueshroom", ItemBase::new);
+	public static final RegistryObject<Item> OWL_FEATHER = Registration.ITEMS.register("owl_feather", ItemBase::new);
+	public static final RegistryObject<Item> SEESHROOM = Registration.ITEMS.register("seeshroom", ItemBase::new);
+	public static final RegistryObject<Item> STONESHROOM = Registration.ITEMS.register("stoneshroom", ItemBase::new);
 	
 	//ARMOR MATERIAL IS FUCKED, somethingsomething enum bad
 	// Armor

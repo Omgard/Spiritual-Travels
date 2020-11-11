@@ -12,11 +12,8 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 
 public class ModBlocks {
-
-	//This is the old registrer, moved to Registration.java
-	//public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Main.MOD_ID);
 	
-	
+		// Blocks
 	    public static final RegistryObject<Block> SILVER_ORE = registerWithItem("silver_ore", () ->
 	            new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).harvestLevel(2).sound(SoundType.STONE)));
 	    public static final RegistryObject<Block> SILVER_BLOCK = registerWithItem("silver_block", () ->
@@ -28,7 +25,7 @@ public class ModBlocks {
 	    static void register() {}
 
 
-
+	    // Registration methods
 	    private static <T extends Block> RegistryObject<T> registerNoItem(String name, Supplier<T> block) {
 	        return Registration.BLOCKS.register(name, block);
 	    }

@@ -1,4 +1,4 @@
-package com.omgard.ritecraft.data.base;
+package com.omgard.ritecraft.objects.items;
 
 import com.omgard.ritecraft.Main;
 

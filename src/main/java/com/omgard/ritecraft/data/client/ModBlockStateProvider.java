@@ -22,7 +22,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		simpleBlock(ModBlocks.SILVER_ORE.get());
 		
 		
-		
 	} 
 
 }
