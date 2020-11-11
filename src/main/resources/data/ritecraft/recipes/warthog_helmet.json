@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"WLW",
+		"L L"
+	],
+	"key": {
+		"L": {
+			"item": "minecraft:leather"
+		},
+		"W": {
+			"item": "ritecraft:warthog_tusk"
+		}
+	},
+	"result": {
+		"item": "ritecraft:warthog_helmet",
+		"count": 1
+	}
+}

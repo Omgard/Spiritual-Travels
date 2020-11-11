@@ -11,23 +11,22 @@ import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 
 public class ModItemModelProvider extends ItemModelProvider {
-    public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-        super(generator, Main.MOD_ID, existingFileHelper);
+	public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
+		super(generator, Main.MOD_ID, existingFileHelper);
 	}
-	
+
 	@Override
 	protected void registerModels() {
-		
+
 		// Block Items
 		withExistingParent("silver_block", modLoc("block/silver_block"));
 		withExistingParent("silver_ore", modLoc("block/silver_ore"));
-		//withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
-		//withExistingParent("blueberry_bush", modLoc("block/blueberry_bush"));
-		
-		
+		// withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
+		withExistingParent("blueberry_bush", modLoc("block/blueberry_bush"));
+
 		// Model files
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
-		
+
 		// Items
 		builder(itemGenerated, "silver_ingot");
 		builder(itemGenerated, "tea_leaves");
@@ -43,17 +42,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "warthog_chestplate");
 		builder(itemGenerated, "warthog_leggings");
 		builder(itemGenerated, "warthog_boots");
-		
-		
-		
-		
+		builder(itemGenerated, "sunleaf");
+
 	}
-	
+
 	private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
-		return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);						
+		return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
 	}
-	
-	
+
 	@Nonnull
 	@Override
 	public String getName() {

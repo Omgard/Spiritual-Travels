@@ -35,6 +35,7 @@ public class CupOfTea extends Item{
 				)
 		);		
 	}
+	
 	public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
 		ItemStack itemstack = super.onItemUseFinish(stack, worldIn, entityLiving);
 		return entityLiving instanceof PlayerEntity && ((PlayerEntity)entityLiving).abilities.isCreativeMode ? itemstack : new ItemStack(ModItems.EMPTY_CUP.get());
