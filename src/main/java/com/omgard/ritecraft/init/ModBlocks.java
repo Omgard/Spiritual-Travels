@@ -30,6 +30,9 @@ public class ModBlocks {
 
 	public static final RegistryObject<Block> SILVER_BLOCK = registerWithItem("silver_block", () -> new Block(
 			Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL)));
+	
+	public static final RegistryObject<Block> MUTATED_INGOT_BLOCK = registerWithItem("mutated_ingot_block", () -> new Block(
+			Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL)));
 
 	public static final RegistryObject<Block> DARK_DIRT = registerWithItem("dark_dirt",
 			() -> new Block(Block.Properties.from(Blocks.DIRT)));

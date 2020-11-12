@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "ritecraft:plague_fir_log"
+        }
+    ],
+    "result": {
+        "item": "ritecraft:plague_fir_planks",
+        "count": 4
+    }
+}

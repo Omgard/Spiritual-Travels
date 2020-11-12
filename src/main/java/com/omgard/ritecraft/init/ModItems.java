@@ -29,6 +29,8 @@ public class ModItems {
 	public static final RegistryObject<Item> COMMON_BLUELEAF = Registration.ITEMS.register("common_blueleaf", ItemBase::new);
 	public static final RegistryObject<Item> ELKSBLOOM = Registration.ITEMS.register("elksbloom", ItemBase::new);
 	public static final RegistryObject<Item> VISION_TEA = Registration.ITEMS.register("vision_tea", CupOfTea::new);
+	public static final RegistryObject<Item> MUTATED_INGOT = Registration.ITEMS.register("mutated_ingot", ItemBase::new);
+	public static final RegistryObject<Item> MUTATED_BATTLEAXE = Registration.ITEMS.register("mutated_battleaxe", ItemBase::new);
 	
 	
 	

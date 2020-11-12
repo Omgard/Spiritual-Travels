@@ -18,6 +18,8 @@
 	"item.ritecraft.mutated_elksbloom": "Mutated Elksbloom",
 	"item.ritecraft.elksbloom": "Elksbloom",
 	"item.ritecraft.vision_tea": "Vision Tea",
+	"item.ritecraft.mutated_ingot": "Mutated Ingot",
+	"item.ritecraft.mutated_battleaxe": "Mutated Battleaxe",
 	
 	
 	"item.ritecraft.warthog_helmet": "Warthog Cap",
@@ -33,6 +35,7 @@
 	"block.ritecraft.plague_fir_log": "Plague Fir Log",
 	"block.ritecraft.plague_fir_planks": "Plague Fir Planks",
 	"block.ritecraft.plague_for_leaves": "Plague Fir Leaves",
+	"block.ritecraft.mutated_ingot_block": "Mutated Ingot Block",
 	
 	
 	"entity.ritecraft.warthog": "Warthog"

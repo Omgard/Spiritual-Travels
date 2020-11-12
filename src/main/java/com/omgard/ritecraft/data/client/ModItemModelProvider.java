@@ -26,6 +26,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		withExistingParent("plague_fir_log", modLoc("block/plague_fir_log"));
 		withExistingParent("plague_fir_planks", modLoc("block/plague_fir_planks"));
 		withExistingParent("plague_fir_leaves", modLoc("block/plague_fir_leaves"));
+		//withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
 
 		// Model files
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
@@ -51,6 +52,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "common_blueleaf");
 		builder(itemGenerated, "elksbloom");
 		builder(itemGenerated, "vision_tea");
+		builder(itemGenerated, "mutated_ingot");
+		builder(itemGenerated, "mutated_battleaxe");
 
 	}
 
