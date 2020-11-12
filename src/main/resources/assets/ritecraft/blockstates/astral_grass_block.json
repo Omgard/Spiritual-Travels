@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "": [
+            { "model": "ritecraft:block/astral_grass_block" },
+            { "model": "ritecraft:block/astral_grass_block", "y": 90 },
+            { "model": "ritecraft:block/astral_grass_block", "y": 180 },
+            { "model": "ritecraft:block/astral_grass_block", "y": 270 }
+        ]
+	}
+}

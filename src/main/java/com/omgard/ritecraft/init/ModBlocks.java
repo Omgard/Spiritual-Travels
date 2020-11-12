@@ -4,23 +4,20 @@ import java.util.function.Supplier;
 
 import com.omgard.ritecraft.Main;
 import com.omgard.ritecraft.objects.blocks.BlueberryBushBlock;
-import com.omgard.ritecraft.objects.blocks.DarkGrassBlock;
 import com.omgard.ritecraft.objects.blocks.ModSaplingBlock;
+import com.omgard.ritecraft.objects.blocks.TeapotBlock;
 import com.omgard.ritecraft.world.feature.MutatedFirTree;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BushBlock;
-import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.LogBlock;
-import net.minecraft.block.SaplingBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.potion.Effects;
 import net.minecraftforge.fml.RegistryObject;
 
 public class ModBlocks {
@@ -31,12 +28,20 @@ public class ModBlocks {
 
 	public static final RegistryObject<Block> DARK_DIRT = registerWithItem("dark_dirt",
 			() -> new Block(Block.Properties.from(Blocks.DIRT)));
+	
+	public static final RegistryObject<Block> ASTRAL_DIRT = registerWithItem("astral_dirt",
+			() -> new Block(Block.Properties.from(Blocks.DIRT)));
 
 	public static final RegistryObject<Block> DARK_GRASS_BLOCK = registerWithItem("dark_grass_block", () -> new Block //DarkGrassBlock is fucked
+			(Block.Properties.from(Blocks.GRASS_BLOCK)));
+	
+	public static final RegistryObject<Block> ASTRAL_GRASS_BLOCK = registerWithItem("astral_grass_block", () -> new Block //DarkGrassBlock is fucked
 			(Block.Properties.from(Blocks.GRASS_BLOCK)));
 
 	public static final RegistryObject<BushBlock> BLUEBERRY_BUSH_BLOCK = registerWithItem("blueberry_bush_block",
 			() -> new BlueberryBushBlock(Block.Properties.from(Blocks.SWEET_BERRY_BUSH)));
+	
+	public static final RegistryObject<Block> TEAPOT = registerWithItem("teapot", ()-> new TeapotBlock(Block.Properties.create(Material.CLAY)));
 
 	//public static final RegistryObject<FlowerBlock> BLUESHROOM = registerWithItem("blueshroom",
 		//	() -> new FlowerBlock(Effects.NIGHT_VISION, 5, Block.Properties.create(Material.PLANTS)
@@ -46,6 +51,9 @@ public class ModBlocks {
 			() -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
 
 	public static final RegistryObject<Block> MUTATED_FIR_LOG = registerWithItem("mutated_fir_log",
+			() -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
+	
+	public static final RegistryObject<Block> ASTRAL_LOG = registerWithItem("astral_log",
 			() -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
 
 	public static final RegistryObject<Block> MUTATED_FIR_LEAVES = registerWithItem("mutated_fir_leaves",

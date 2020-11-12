@@ -9,7 +9,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.IGrowable;
-import net.minecraft.block.SnowBlock;
 import net.minecraft.block.SpreadableSnowyDirtBlock;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.util.Direction;

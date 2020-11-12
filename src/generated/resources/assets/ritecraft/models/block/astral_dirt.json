@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ritecraft:block/silver_block"
+    "all": "ritecraft:block/astral_dirt"
   }
 }

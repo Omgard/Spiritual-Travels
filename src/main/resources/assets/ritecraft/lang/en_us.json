@@ -19,6 +19,10 @@
 	"item.ritecraft.vision_tea": "Vision Tea",
 	"item.ritecraft.mutated_ingot": "Mutated Ingot",
 	"item.ritecraft.mutated_battleaxe": "Mutated Battleaxe",
+	"item.ritecraft.moonweed": "Moonweed",
+	"item.ritecraft.darkroot": "Darkroot",
+	"item.ritecraft.warthog_snout": "Warthog Snout",
+	
 	
 	
 	"item.ritecraft.warthog_helmet": "Warthog Cap",
@@ -28,8 +32,11 @@
 	
 
 	"block.ritecraft.dark_dirt": "Dark Dirt",
+	"block.ritecraft.astral_dirt": "Astral Dirt",
 	"block.ritecraft.dark_grass_block": "Dark Grass block",
+	"block.ritecraft.astral_grass_block": "Astral Grass block",
 	"block.ritecraft.mutated_fir_log": "Mutated Fir Log",
+	"block.ritecraft.astral_log": "Astral Log",
 	"block.ritecraft.mutated_fir_planks": "Mutated Fir Planks",
 	"block.ritecraft.mutated_fir_leaves": "Mutated Fir Leaves",
 	"block.ritecraft.mutated_ingot_block": "Mutated Ingot Block",

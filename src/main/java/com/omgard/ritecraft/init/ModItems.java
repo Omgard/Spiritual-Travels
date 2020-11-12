@@ -30,7 +30,9 @@ public class ModItems {
 	public static final RegistryObject<Item> VISION_TEA = Registration.ITEMS.register("vision_tea", CupOfTea::new);
 	public static final RegistryObject<Item> MUTATED_INGOT = Registration.ITEMS.register("mutated_ingot", ItemBase::new);
 	public static final RegistryObject<Item> MUTATED_BATTLEAXE = Registration.ITEMS.register("mutated_battleaxe", ItemBase::new);
-	
+	public static final RegistryObject<Item> MOONWEED = Registration.ITEMS.register("moonweed", ItemBase::new);
+	public static final RegistryObject<Item> DARKROOT = Registration.ITEMS.register("darkroot", ItemBase::new);
+	public static final RegistryObject<Item> WARTHOG_SNOUT = Registration.ITEMS.register("warthog_snout", ItemBase::new);
 	
 	
 

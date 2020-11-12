@@ -20,8 +20,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 		// Block Items
 		withExistingParent("dark_dirt", modLoc("block/dark_dirt"));
+		withExistingParent("astral_dirt", modLoc("block/astral_dirt"));
 		withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
+		withExistingParent("astral_grass_block", modLoc("block/astral_grass_block"));
 		withExistingParent("mutated_fir_log", modLoc("block/mutated_fir_log"));
+		withExistingParent("astral_log", modLoc("block/astral_log"));
 		withExistingParent("mutated_fir_planks", modLoc("block/mutated_fir_planks"));
 		withExistingParent("mutated_fir_leaves", modLoc("block/mutated_fir_leaves"));
 		//withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
@@ -30,7 +33,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
 
 		// Items
-		builder(itemGenerated, "silver_ingot");
 		builder(itemGenerated, "tea_leaves");
 		builder(itemGenerated, "warthog_tusk");
 		builder(itemGenerated, "blueberry");
@@ -52,6 +54,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "vision_tea");
 		builder(itemGenerated, "mutated_ingot");
 		builder(itemGenerated, "mutated_battleaxe");
+		builder(itemGenerated, "moonweed");
+		builder(itemGenerated, "darkroot");
+		builder(itemGenerated, "warthog_snout");
 
 	}
 

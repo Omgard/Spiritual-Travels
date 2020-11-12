@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "ritecraft:block/astral_log",
+    "end": "ritecraft:block/astral_log_top"
+  }
+}

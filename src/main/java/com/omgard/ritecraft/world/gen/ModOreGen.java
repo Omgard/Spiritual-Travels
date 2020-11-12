@@ -1,8 +1,6 @@
 package com.omgard.ritecraft.world.gen;
 
 import com.omgard.ritecraft.Main;
-import com.omgard.ritecraft.init.ModBlocks;
-
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.pattern.BlockMatcher;
@@ -48,6 +46,7 @@ public class ModOreGen {
 		}
 	}
 	
+	@SuppressWarnings("unused")
 	private static void genOre(Biome biome, int count, int bottomOffset, int topOffset, int max, OreFeatureConfig.FillerBlockType filler, BlockState defaultBlockstate, int size) {
 		CountRangeConfig range = new CountRangeConfig(count, bottomOffset, topOffset, max);
 		OreFeatureConfig feature = new OreFeatureConfig(filler, defaultBlockstate, size);
