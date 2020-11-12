@@ -49,7 +49,7 @@ public class Main
 	}
 	
 	private void doClientStuff(final FMLClientSetupEvent event) {
-		RenderTypeLookup.setRenderLayer(ModBlocks.PLAGUE_FIR_SAPLING.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.MUTATED_FIR_SAPLING.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.BLUEBERRY_BUSH_BLOCK.get(), RenderType.getCutout());
 		
 	}

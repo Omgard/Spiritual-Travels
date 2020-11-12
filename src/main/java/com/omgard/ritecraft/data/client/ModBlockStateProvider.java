@@ -24,10 +24,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		simpleBlock(ModBlocks.SILVER_BLOCK.get());
 		simpleBlock(ModBlocks.SILVER_ORE.get());
 		simpleBlock(ModBlocks.DARK_DIRT.get());
-		simpleBlock(ModBlocks.PLAGUE_FIR_PLANKS.get());
-		simpleBlock(ModBlocks.PLAGUE_FIR_LEAVES.get());
+		simpleBlock(ModBlocks.MUTATED_FIR_PLANKS.get());
+		simpleBlock(ModBlocks.MUTATED_FIR_LEAVES.get());
 		//simpleBlock(ModBlocks.MUTATED_INGOT_BLOCK.get());
-		logBlock((LogBlock) ModBlocks.PLAGUE_FIR_LOG.get());
+		logBlock((LogBlock) ModBlocks.MUTATED_FIR_LOG.get());
 		
 		
 		

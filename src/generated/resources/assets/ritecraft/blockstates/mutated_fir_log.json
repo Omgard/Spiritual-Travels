@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ritecraft:block/mutated_fir_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ritecraft:block/mutated_fir_log"
+    },
+    "axis=z": {
+      "model": "ritecraft:block/mutated_fir_log",
+      "x": 90
+    }
+  }
+}

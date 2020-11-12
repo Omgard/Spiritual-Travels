@@ -23,9 +23,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 		withExistingParent("silver_ore", modLoc("block/silver_ore"));
 		withExistingParent("dark_dirt", modLoc("block/dark_dirt"));
 		withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
-		withExistingParent("plague_fir_log", modLoc("block/plague_fir_log"));
-		withExistingParent("plague_fir_planks", modLoc("block/plague_fir_planks"));
-		withExistingParent("plague_fir_leaves", modLoc("block/plague_fir_leaves"));
+		withExistingParent("mutated_fir_log", modLoc("block/mutated_fir_log"));
+		withExistingParent("mutated_fir_planks", modLoc("block/mutated_fir_planks"));
+		withExistingParent("mutated_fir_leaves", modLoc("block/mutated_fir_leaves"));
 		//withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
 
 		// Model files

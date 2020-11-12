@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "ritecraft:block/plague_fir_sapling"
+        "layer0": "ritecraft:blocks/mutated_fir_sapling"
     }
 }

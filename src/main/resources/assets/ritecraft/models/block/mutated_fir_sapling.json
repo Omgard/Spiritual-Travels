@@ -1,6 +1,6 @@
 {
     "parent": "block/cross",
     "textures": {
-        "cross": "ritecraft:block/plague_fir_sapling"
+        "cross": "ritecraft:block/mutated_fir_sapling"
     }
 }

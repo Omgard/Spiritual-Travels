@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "ritecraft:block/plague_fir_planks"
+    "all": "ritecraft:block/mutated_fir_leaves"
   }
 }
