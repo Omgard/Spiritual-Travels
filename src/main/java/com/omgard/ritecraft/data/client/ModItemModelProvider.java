@@ -19,8 +19,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 	protected void registerModels() {
 
 		// Block Items
-		withExistingParent("silver_block", modLoc("block/silver_block"));
-		withExistingParent("silver_ore", modLoc("block/silver_ore"));
 		withExistingParent("dark_dirt", modLoc("block/dark_dirt"));
 		withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
 		withExistingParent("mutated_fir_log", modLoc("block/mutated_fir_log"));

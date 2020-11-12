@@ -31,18 +31,18 @@ public class ModOreGen {
 			
 			// Nether Generation
 			if (biome.getCategory() == Biome.Category.NETHER) {
-				genOre(biome, 8, 8, 5, 80, OreFeatureConfig.FillerBlockType.NETHERRACK, ModBlocks.SILVER_ORE.get().getDefaultState(), 3);
+				//genOre(biome, 8, 8, 5, 80, OreFeatureConfig.FillerBlockType.NETHERRACK, ModBlocks.SILVER_ORE.get().getDefaultState(), 3);
 			}
 			
 			// End Generation
 			else if (biome.getCategory() == Biome.Category.THEEND) {
-				genOre(biome, 10, 8, 5, 80, END_STONE, ModBlocks.SILVER_ORE.get().getDefaultState(), 12);
+				//genOre(biome, 10, 8, 5, 80, END_STONE, ModBlocks.SILVER_ORE.get().getDefaultState(), 12);
 			}
 			
 			// Overworld Generation
 			else {
 				if (biome == Biomes.DESERT) {
-					genOre(biome, 8, 8, 5, 37, OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.SILVER_ORE.get().getDefaultState(), 6);
+					//genOre(biome, 8, 8, 5, 37, OreFeatureConfig.FillerBlockType.NATURAL_STONE, ModBlocks.SILVER_ORE.get().getDefaultState(), 6);
 				}
 			}
 		}

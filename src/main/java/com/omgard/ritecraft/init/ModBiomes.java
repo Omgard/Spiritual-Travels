@@ -15,9 +15,9 @@ public class ModBiomes {
 	// Example Biome
 	public static final RegistryObject<Biome> EXAMPLE_BIOME = Registration.BIOMES.register("example_biome", () -> new ExampleBiome(new Biome.Builder()
 			.surfaceBuilder(SurfaceBuilder.DEFAULT, 
-					new SurfaceBuilderConfig(ModBlocks.SILVER_BLOCK.get().getDefaultState(), 
+					new SurfaceBuilderConfig(ModBlocks.MUTATED_FIR_LOG.get().getDefaultState(), 
 											 Blocks.ACACIA_PLANKS.getDefaultState(), 
-											 ModBlocks.SILVER_BLOCK.get().getDefaultState()))
+											 ModBlocks.MUTATED_FIR_LOG.get().getDefaultState()))
 			.precipitation(RainType.SNOW)
 			.temperature(0.5F)
 			.waterColor(14283911)

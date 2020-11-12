@@ -2,7 +2,6 @@
 	"itemGroup.ritecrafttab": "Ritecraft",
 	
 	
-	"item.ritecraft.silver_ingot": "Silver Ingot",	
 	"item.ritecraft.tea_leaves": "Tea Leaves",
 	"item.ritecraft.blueberry": "Blueberry",
 	"item.ritecraft.warthog_tusk": "Warthog Tusk",
@@ -27,9 +26,7 @@
 	"item.ritecraft.warthog_leggings": "Warthog Pants",
 	"item.ritecraft.warthog_boots": "Warthog Boots",
 	
-	
-	"block.ritecraft.silver_ore": "Silver Ore",
-	"block.ritecraft.silver_block": "Block of Silver",
+
 	"block.ritecraft.dark_dirt": "Dark Dirt",
 	"block.ritecraft.dark_grass_block": "Dark Grass block",
 	"block.ritecraft.mutated_fir_log": "Mutated Fir Log",

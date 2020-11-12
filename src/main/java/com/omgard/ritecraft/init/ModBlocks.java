@@ -25,14 +25,7 @@ import net.minecraftforge.fml.RegistryObject;
 
 public class ModBlocks {
 
-	// Blocks
-	public static final RegistryObject<Block> SILVER_ORE = registerWithItem("silver_ore",
-			() -> new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3, 10).harvestLevel(2)
-					.sound(SoundType.STONE)));
-
-	public static final RegistryObject<Block> SILVER_BLOCK = registerWithItem("silver_block", () -> new Block(
-			Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL)));
-	
+	// Blocks	
 	public static final RegistryObject<Block> MUTATED_INGOT_BLOCK = registerWithItem("mutated_ingot_block", () -> new Block(
 			Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL)));
 
