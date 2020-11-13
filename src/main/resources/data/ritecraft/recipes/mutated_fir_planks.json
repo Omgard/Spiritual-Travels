@@ -2,11 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "ritecraft:plague_fir_log"
+            "item": "ritecraft:mutated_fir_log"
         }
     ],
     "result": {
-        "item": "ritecraft:plague_fir_planks",
+        "item": "ritecraft:mutated_fir_planks",
         "count": 4
     }
 }
