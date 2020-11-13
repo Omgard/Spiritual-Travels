@@ -15,6 +15,11 @@
         "facing=north,level=3":  { "model": "ritecraft:block/teapot" },
         "facing=south,level=3":  { "model": "ritecraft:block/teapot", "y": 180 },
         "facing=west,level=3":  { "model": "ritecraft:block/teapot", "y": 270 },
-        "facing=east,level=3":  { "model": "ritecraft:block/teapot", "y": 90 }
+        "facing=east,level=3":  { "model": "ritecraft:block/teapot", "y": 90 },
+        "facing=north,level=4":  { "model": "ritecraft:block/teapot" },
+        "facing=south,level=4":  { "model": "ritecraft:block/teapot", "y": 180 },
+        "facing=west,level=4":  { "model": "ritecraft:block/teapot", "y": 270 },
+        "facing=east,level=4":  { "model": "ritecraft:block/teapot", "y": 90 }
+        
         }
 }
