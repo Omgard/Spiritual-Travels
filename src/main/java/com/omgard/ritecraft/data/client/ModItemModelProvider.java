@@ -57,6 +57,21 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "moonweed");
 		builder(itemGenerated, "darkroot");
 		builder(itemGenerated, "warthog_snout");
+		builder(itemGenerated, "elk_antler");
+		builder(itemGenerated, "moon_antler");
+		builder(itemGenerated, "lynx_paw");
+		builder(itemGenerated, "owls_beak");
+		builder(itemGenerated, "green_fox_eye");
+		builder(itemGenerated, "golden_leather");
+		builder(itemGenerated, "fox_tail");
+		builder(itemGenerated, "golden_fox_tail");
+		builder(itemGenerated, "elk_bones");
+		builder(itemGenerated, "elkbone_club");
+		/*builder(itemGenerated, "acorn"); missing texture */
+		builder(itemGenerated, "lucky_acorn");
+		builder(itemGenerated, "deer_leather");
+		builder(itemGenerated, "ruined_elk_antler");
+		builder(itemGenerated, "moon_leather");
 
 	}
 

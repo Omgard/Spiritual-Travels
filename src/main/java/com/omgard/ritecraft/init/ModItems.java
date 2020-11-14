@@ -33,6 +33,21 @@ public class ModItems {
 	public static final RegistryObject<Item> MOONWEED = Registration.ITEMS.register("moonweed", ItemBase::new);
 	public static final RegistryObject<Item> DARKROOT = Registration.ITEMS.register("darkroot", ItemBase::new);
 	public static final RegistryObject<Item> WARTHOG_SNOUT = Registration.ITEMS.register("warthog_snout", ItemBase::new);
+	public static final RegistryObject<Item> ELK_ANTLER = Registration.ITEMS.register("elk_antler", ItemBase::new);
+	public static final RegistryObject<Item> MOON_ANTLER = Registration.ITEMS.register("moon_antler", ItemBase::new);
+	public static final RegistryObject<Item> LYNX_PAW = Registration.ITEMS.register("lynx_paw", ItemBase::new);
+	public static final RegistryObject<Item> OWLS_BEAK = Registration.ITEMS.register("owls_beak", ItemBase::new);
+	public static final RegistryObject<Item> GREEN_FOX_EYE = Registration.ITEMS.register("green_fox_eye", ItemBase::new);
+	public static final RegistryObject<Item> GOLDEN_LEATHER = Registration.ITEMS.register("golden_leather", ItemBase::new);
+	public static final RegistryObject<Item> FOX_TAIL = Registration.ITEMS.register("fox_tail", ItemBase::new);
+	public static final RegistryObject<Item> GOLDEN_FOX_TAIL = Registration.ITEMS.register("golden_fox_tail", ItemBase::new);
+	public static final RegistryObject<Item> ELK_BONES = Registration.ITEMS.register("elk_bones", ItemBase::new);
+	public static final RegistryObject<Item> ELKBONE_CLUB = Registration.ITEMS.register("elkbone_club", ItemBase::new);
+	public static final RegistryObject<Item> ACORN = Registration.ITEMS.register("acorn", ItemBase::new);
+	public static final RegistryObject<Item> LUCKY_ACORN = Registration.ITEMS.register("lucky_acorn", ItemBase::new);
+	public static final RegistryObject<Item> DEER_LEATHER = Registration.ITEMS.register("deer_leather", ItemBase::new);
+	public static final RegistryObject<Item> RUINED_ELK_ANTLER = Registration.ITEMS.register("ruined_elk_antler", ItemBase::new);
+	public static final RegistryObject<Item> MOON_LEATHER = Registration.ITEMS.register("moon_leather", ItemBase::new);
 	
 	
 

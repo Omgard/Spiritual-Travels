@@ -130,7 +130,6 @@ public class TeapotBlock extends Block {
 	
 	public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 	public static final IntegerProperty LEVEL = IntegerProperty.create("level", 0, 7);
-	
 
 	public TeapotBlock(Properties properties) {
 		super(properties); 
@@ -160,14 +159,18 @@ public class TeapotBlock extends Block {
 	2: Water and tealeaves
 	3: NOT USED, need to figure out timer. Unfinished tea
 	4: Blueberry Tea (Blueberry)
-	5:
+	5: Vision Tea (See shroom)
 	6:
 	7:
 	*/
 	
+	int teaTimer = 0;
+	
 	@Override
 	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player,
 			Hand handIn, BlockRayTraceResult hit) {
+		
+		
 		
 		ItemStack itemstack = player.getHeldItem(handIn);
 		Item tea = null;
@@ -207,22 +210,33 @@ public class TeapotBlock extends Block {
 	                     itemstack.shrink(1);
 					}
 					this.setLevel(worldIn, pos, state, 4);
-					}	
+					//updateState(worldIn, pos, state, teaTimer);
+					
+				 }	
 				 return ActionResultType.SUCCESS;
 				 
-			/*} else if (item == Items.FLINT_AND_STEEL && i == 3) {
-				if (!worldIn.isRemote) {
-					this.setLevel(worldIn, pos, state, i + 1);
+			} else if (item == ModItems.SEESHROOM.get() && i == 2) {
+
+				 if (!worldIn.isRemote) {
+					if (!player.abilities.isCreativeMode) {
+	                     itemstack.shrink(1);
 					}
-				return ActionResultType.SUCCESS; */
+					this.setLevel(worldIn, pos, state, 5);
+					}	
+				 return ActionResultType.SUCCESS;
 				
 			} else if (item == ModItems.EMPTY_CUP.get() && i >= 4) {
 				if(!worldIn.isRemote) {
 					switch (i) {
 					case 4:
 						tea = ModItems.BLUEBERRY_TEA.get();
+						break;
+					case 5:
+						tea = ModItems.VISION_TEA.get();
+						break;
 					default:
-						tea = ModItems.BLUEBERRY_TEA.get();	
+						tea = Items.COARSE_DIRT;
+						break;
 					}
 					player.setHeldItem(handIn, new ItemStack(tea));
 					this.setLevel(worldIn, pos, state, 0);
@@ -231,6 +245,10 @@ public class TeapotBlock extends Block {
 				
 			} else {
 				return ActionResultType.PASS;
+			}
 		}
 	}
-}}
+	//protected void updateState(World worldIn, BlockPos pos, BlockState state, int teaState) {
+		//worldIn.getPendingBlockTicks().scheduleTick(new BlockPos(pos), this, 80);
+	//}
+}

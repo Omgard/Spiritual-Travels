@@ -2,7 +2,7 @@
 	"ambientocclusion": true,
 	"texture_size": [32, 32],
 	"textures": {
-		"water": "ritecraft:block/water",
+		"water": "ritecraft:block/visionwater",
 		"2": "ritecraft:block/teapot",
 		"particle": "ritecraft:block/teapot"
 	},

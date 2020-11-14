@@ -4,22 +4,31 @@
         "facing=south,level=0":  { "model": "ritecraft:block/teapot", "y": 180 },
         "facing=west,level=0":  { "model": "ritecraft:block/teapot", "y": 270 },
         "facing=east,level=0":  { "model": "ritecraft:block/teapot", "y": 90 },
+        
         "facing=north,level=1":  { "model": "ritecraft:block/teapot_water" },
         "facing=south,level=1":  { "model": "ritecraft:block/teapot_water", "y": 180 },
         "facing=west,level=1":  { "model": "ritecraft:block/teapot_water", "y": 270 },
         "facing=east,level=1":  { "model": "ritecraft:block/teapot_water", "y": 90 },
-        "facing=north,level=2":  { "model": "ritecraft:block/teapot" },
-        "facing=south,level=2":  { "model": "ritecraft:block/teapot", "y": 180 },
-        "facing=west,level=2":  { "model": "ritecraft:block/teapot", "y": 270 },
-        "facing=east,level=2":  { "model": "ritecraft:block/teapot", "y": 90 },
-        "facing=north,level=3":  { "model": "ritecraft:block/teapot" },
-        "facing=south,level=3":  { "model": "ritecraft:block/teapot", "y": 180 },
-        "facing=west,level=3":  { "model": "ritecraft:block/teapot", "y": 270 },
-        "facing=east,level=3":  { "model": "ritecraft:block/teapot", "y": 90 },
-        "facing=north,level=4":  { "model": "ritecraft:block/teapot" },
-        "facing=south,level=4":  { "model": "ritecraft:block/teapot", "y": 180 },
-        "facing=west,level=4":  { "model": "ritecraft:block/teapot", "y": 270 },
-        "facing=east,level=4":  { "model": "ritecraft:block/teapot", "y": 90 }
+        
+        "facing=north,level=2":  { "model": "ritecraft:block/teapot_teawater" },
+        "facing=south,level=2":  { "model": "ritecraft:block/teapot_teawater", "y": 180 },
+        "facing=west,level=2":  { "model": "ritecraft:block/teapot_teawater", "y": 270 },
+        "facing=east,level=2":  { "model": "ritecraft:block/teapot_teawater", "y": 90 },
+        
+        "facing=north,level=3":  { "model": "ritecraft:block/teapot_water" },
+        "facing=south,level=3":  { "model": "ritecraft:block/teapot_water", "y": 180 },
+        "facing=west,level=3":  { "model": "ritecraft:block/teapot_water", "y": 270 },
+        "facing=east,level=3":  { "model": "ritecraft:block/teapot_water", "y": 90 },
+        
+        "facing=north,level=4":  { "model": "ritecraft:block/teapot_blueberrywater" },
+        "facing=south,level=4":  { "model": "ritecraft:block/teapot_blueberrywater", "y": 180 },
+        "facing=west,level=4":  { "model": "ritecraft:block/teapot_blueberrywater", "y": 270 },
+        "facing=east,level=4":  { "model": "ritecraft:block/teapot_blueberrywater", "y": 90 },
+        
+        "facing=north,level=5":  { "model": "ritecraft:block/teapot_vision" },
+        "facing=south,level=5":  { "model": "ritecraft:block/teapot_vision", "y": 180 },
+        "facing=west,level=5":  { "model": "ritecraft:block/teapot_vision", "y": 270 },
+        "facing=east,level=5":  { "model": "ritecraft:block/teapot_vision", "y": 90 }
         
         }
 }
