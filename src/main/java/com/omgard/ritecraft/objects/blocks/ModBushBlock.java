@@ -10,7 +10,7 @@ import net.minecraft.world.IBlockReader;
 
 public class ModBushBlock extends BushBlock {
 	
-	protected static final VoxelShape SHAPE = Block.makeCuboidShape(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D);
+	protected static final VoxelShape SHAPE = Block.makeCuboidShape(5.0D, 0.0D, 5.0D, 11.0D, 10.0D, 11.0D);
 
 	public ModBushBlock(Properties properties) {
 		super(properties);

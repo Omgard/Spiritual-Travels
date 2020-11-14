@@ -57,7 +57,13 @@ public class ModBlocks {
 			() -> new ModBushBlock(Block.Properties.from(Blocks.POPPY)));
 	
 	public static final RegistryObject<Block> MUTATED_ELKSBLOOM = registerWithItem("mutated_elksbloom",
-			() -> new ModBushBlock(Block.Properties.from(Blocks.POPPY)));		
+			() -> new ModBushBlock(Block.Properties.from(Blocks.POPPY)));
+	
+	public static final RegistryObject<Block> MOONWEED = registerWithItem("moonweed",
+			() -> new ModBushBlock(Block.Properties.from(Blocks.POPPY)));
+	
+	public static final RegistryObject<Block> COMMON_BLUELEAF = registerWithItem("common_blueleaf",
+			() -> new ModBushBlock(Block.Properties.from(Blocks.POPPY)));
 
 	public static final RegistryObject<Block> MUTATED_FIR_PLANKS = registerWithItem("mutated_fir_planks",
 			() -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));

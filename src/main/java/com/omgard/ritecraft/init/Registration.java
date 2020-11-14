@@ -51,6 +51,8 @@ public class Registration {
 		RenderTypeLookup.setRenderLayer(ModBlocks.STONESHROOM.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.ELKSBLOOM.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.MUTATED_ELKSBLOOM.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.MOONWEED.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.COMMON_BLUELEAF.get(), RenderType.getCutout());
     	
     }
     
