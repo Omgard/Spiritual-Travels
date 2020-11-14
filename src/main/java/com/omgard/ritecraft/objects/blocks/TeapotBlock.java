@@ -2,12 +2,14 @@ package com.omgard.ritecraft.objects.blocks;
 
 import java.util.stream.Stream;
 
+import com.omgard.ritecraft.init.ModBlocks;
 import com.omgard.ritecraft.init.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -215,7 +217,7 @@ public class TeapotBlock extends Block {
 				 }	
 				 return ActionResultType.SUCCESS;
 				 
-			} else if (item == ModItems.SEESHROOM.get() && i == 2) {
+			} else if (item == BlockItem.getItemFromBlock(ModBlocks.SEESHROOM.get()) && i == 2) {
 
 				 if (!worldIn.isRemote) {
 					if (!player.abilities.isCreativeMode) {

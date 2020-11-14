@@ -27,7 +27,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 		withExistingParent("astral_log", modLoc("block/astral_log"));
 		withExistingParent("mutated_fir_planks", modLoc("block/mutated_fir_planks"));
 		withExistingParent("mutated_fir_leaves", modLoc("block/mutated_fir_leaves"));
-		//withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
+		withExistingParent("blueshroom", modLoc ("block/blueshroom"));
+		withExistingParent("seeshroom", modLoc ("block/seeshroom"));
+		withExistingParent("stoneshroom", modLoc ("block/stoneshroom"));
+		withExistingParent("elksbloom", modLoc ("block/elksbloom"));
+		withExistingParent("mutated_elksbloom", modLoc ("block/mutated_elksbloom"));
+		
+		//pls add texture withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
 
 		// Model files
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
@@ -36,10 +42,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "tea_leaves");
 		builder(itemGenerated, "warthog_tusk");
 		builder(itemGenerated, "blueberry");
-		builder(itemGenerated, "blueshroom");
 		builder(itemGenerated, "owl_feather");
-		builder(itemGenerated, "seeshroom");
-		builder(itemGenerated, "stoneshroom");
 		builder(itemGenerated, "empty_cup");
 		builder(itemGenerated, "blueberry_tea");
 		builder(itemGenerated, "warthog_helmet");
@@ -48,9 +51,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "warthog_boots");
 		builder(itemGenerated, "sunleaf");
 		builder(itemGenerated, "chaos_tea");
-		builder(itemGenerated, "mutated_elksbloom");
 		builder(itemGenerated, "common_blueleaf");
-		builder(itemGenerated, "elksbloom");
 		builder(itemGenerated, "vision_tea");
 		builder(itemGenerated, "mutated_ingot");
 		builder(itemGenerated, "mutated_battleaxe");
@@ -67,7 +68,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "golden_fox_tail");
 		builder(itemGenerated, "elk_bones");
 		builder(itemGenerated, "elkbone_club");
-		/*builder(itemGenerated, "acorn"); missing texture */
+		//builder(itemGenerated, "acorn"); missing texture
 		builder(itemGenerated, "lucky_acorn");
 		builder(itemGenerated, "deer_leather");
 		builder(itemGenerated, "ruined_elk_antler");

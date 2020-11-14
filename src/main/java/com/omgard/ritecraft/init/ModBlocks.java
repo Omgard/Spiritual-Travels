@@ -4,6 +4,7 @@ import java.util.function.Supplier;
 
 import com.omgard.ritecraft.Main;
 import com.omgard.ritecraft.objects.blocks.BlueberryBushBlock;
+import com.omgard.ritecraft.objects.blocks.ModBushBlock;
 import com.omgard.ritecraft.objects.blocks.ModSaplingBlock;
 import com.omgard.ritecraft.objects.blocks.TeapotBlock;
 import com.omgard.ritecraft.world.feature.MutatedFirTree;
@@ -43,9 +44,20 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> TEAPOT = registerWithItem("teapot", ()-> new TeapotBlock(Block.Properties.create(Material.CLAY)));
 
-	//public static final RegistryObject<FlowerBlock> BLUESHROOM = registerWithItem("blueshroom",
-		//	() -> new FlowerBlock(Effects.NIGHT_VISION, 5, Block.Properties.create(Material.PLANTS)
-			//		.doesNotBlockMovement().hardnessAndResistance(0.0F).sound(SoundType.PLANT)));
+	public static final RegistryObject<Block> BLUESHROOM = registerWithItem("blueshroom",
+			() -> new ModBushBlock(Block.Properties.from(Blocks.BROWN_MUSHROOM)));
+	
+	public static final RegistryObject<Block> SEESHROOM = registerWithItem("seeshroom",
+			() -> new ModBushBlock(Block.Properties.from(Blocks.BROWN_MUSHROOM)));
+	
+	public static final RegistryObject<Block> STONESHROOM = registerWithItem("stoneshroom",
+			() -> new ModBushBlock(Block.Properties.from(Blocks.BROWN_MUSHROOM)));	
+	
+	public static final RegistryObject<Block> ELKSBLOOM = registerWithItem("elksbloom",
+			() -> new ModBushBlock(Block.Properties.from(Blocks.POPPY)));
+	
+	public static final RegistryObject<Block> MUTATED_ELKSBLOOM = registerWithItem("mutated_elksbloom",
+			() -> new ModBushBlock(Block.Properties.from(Blocks.POPPY)));		
 
 	public static final RegistryObject<Block> MUTATED_FIR_PLANKS = registerWithItem("mutated_fir_planks",
 			() -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));

@@ -16,17 +16,12 @@ public class ModItems {
 	public static final RegistryObject<Item> TEA_LEAVES = Registration.ITEMS.register("tea_leaves", ItemBase::new);
 	public static final RegistryObject<Item> WARTHOG_TUSK = Registration.ITEMS.register("warthog_tusk", ItemBase::new);
 	public static final RegistryObject<Item> BLUEBERRY = Registration.ITEMS.register("blueberry", ItemBase::new);
-	public static final RegistryObject<Item> BLUESHROOM = Registration.ITEMS.register("blueshroom", ItemBase::new);
 	public static final RegistryObject<Item> OWL_FEATHER = Registration.ITEMS.register("owl_feather", ItemBase::new);
-	public static final RegistryObject<Item> SEESHROOM = Registration.ITEMS.register("seeshroom", ItemBase::new);
-	public static final RegistryObject<Item> STONESHROOM = Registration.ITEMS.register("stoneshroom", ItemBase::new);
 	public static final RegistryObject<Item> EMPTY_CUP = Registration.ITEMS.register("empty_cup", ItemBase::new);
 	public static final RegistryObject<Item> BLUEBERRY_TEA = Registration.ITEMS.register("blueberry_tea", CupOfTea::new);
 	public static final RegistryObject<Item> SUNLEAF = Registration.ITEMS.register("sunleaf", ItemBase::new);
 	public static final RegistryObject<Item> CHAOS_TEA = Registration.ITEMS.register("chaos_tea", CupOfTea::new);
-	public static final RegistryObject<Item> MUTATED_ELKSBLOOM = Registration.ITEMS.register("mutated_elksbloom", ItemBase::new);
 	public static final RegistryObject<Item> COMMON_BLUELEAF = Registration.ITEMS.register("common_blueleaf", ItemBase::new);
-	public static final RegistryObject<Item> ELKSBLOOM = Registration.ITEMS.register("elksbloom", ItemBase::new);
 	public static final RegistryObject<Item> VISION_TEA = Registration.ITEMS.register("vision_tea", CupOfTea::new);
 	public static final RegistryObject<Item> MUTATED_INGOT = Registration.ITEMS.register("mutated_ingot", ItemBase::new);
 	public static final RegistryObject<Item> MUTATED_BATTLEAXE = Registration.ITEMS.register("mutated_battleaxe", ItemBase::new);

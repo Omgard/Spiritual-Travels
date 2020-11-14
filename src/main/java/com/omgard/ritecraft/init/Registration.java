@@ -3,6 +3,8 @@ package com.omgard.ritecraft.init;
 import com.omgard.ritecraft.Main;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
@@ -25,11 +27,11 @@ public class Registration {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         
         BLOCKS.register(modEventBus);
-        Main.LOGGER.debug("Registered Blocks!");
+        Main.LOGGER.info("Registered Blocks!");
         ITEMS.register(modEventBus);
-        Main.LOGGER.debug("Registered Items!");
+        Main.LOGGER.info("Registered Items!");
         ENTITY_TYPES.register(modEventBus);
-        Main.LOGGER.debug("Registered Entities!");
+        Main.LOGGER.info("Registered Entities!");
         
         //BIOMES.register(modEventBus);
 
@@ -39,4 +41,17 @@ public class Registration {
         ModEntityTypes.register();
 
     }
+    
+    public static void setRender() {
+    	
+		RenderTypeLookup.setRenderLayer(ModBlocks.MUTATED_FIR_SAPLING.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.BLUEBERRY_BUSH_BLOCK.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.BLUESHROOM.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.SEESHROOM.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.STONESHROOM.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.ELKSBLOOM.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.MUTATED_ELKSBLOOM.get(), RenderType.getCutout());
+    	
+    }
+    
 }
