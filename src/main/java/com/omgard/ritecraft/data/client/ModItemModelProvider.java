@@ -32,6 +32,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		withExistingParent("stoneshroom", modLoc ("block/stoneshroom"));
 		withExistingParent("elksbloom", modLoc ("block/elksbloom"));
 		withExistingParent("mutated_elksbloom", modLoc ("block/mutated_elksbloom"));
+		withExistingParent("mutated_fir_stairs", modLoc ("block/mutated_fir_stairs"));
 		
 		//pls add texture withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
 

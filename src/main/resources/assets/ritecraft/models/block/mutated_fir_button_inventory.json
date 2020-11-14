@@ -1,0 +1,6 @@
+{
+    "parent": "block/button_inventory",
+    "textures": {
+        "texture": "ritecraft:block/mutated_fir_planks"
+    }
+}

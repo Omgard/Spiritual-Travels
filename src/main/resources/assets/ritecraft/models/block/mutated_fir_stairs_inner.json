@@ -1,0 +1,8 @@
+{
+    "parent": "block/inner_stairs",
+    "textures": {
+        "bottom": "ritecraft:block/mutated_fir_planks",
+        "top": "ritecraft:block/mutated_fir_planks",
+        "side": "ritecraft:block/mutated_fir_planks"
+    }
+}

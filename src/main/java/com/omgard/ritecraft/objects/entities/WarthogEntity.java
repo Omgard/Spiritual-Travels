@@ -1,6 +1,7 @@
 package com.omgard.ritecraft.objects.entities;
 
 import com.omgard.ritecraft.init.ModEntityTypes;
+import com.omgard.ritecraft.init.ModSounds;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.AgeableEntity;
@@ -70,7 +71,8 @@ public class WarthogEntity extends AnimalEntity {
 	
 	@Override
 	protected SoundEvent getAmbientSound() {
-		return SoundEvents.ENTITY_PIG_AMBIENT;
+		return ModSounds.AMBIENT.get();
+				
 	}
 	
 	@Override

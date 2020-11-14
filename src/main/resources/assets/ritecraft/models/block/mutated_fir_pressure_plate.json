@@ -1,0 +1,6 @@
+{
+    "parent": "block/pressure_plate_up",
+    "textures": {
+        "texture": "ritecraft:block/mutated_fir_planks"
+    }
+}

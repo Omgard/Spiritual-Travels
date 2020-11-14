@@ -3,12 +3,9 @@ package com.omgard.ritecraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.omgard.ritecraft.init.ModBlocks;
 import com.omgard.ritecraft.init.ModItems;
 import com.omgard.ritecraft.init.Registration;
 
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,7 +29,9 @@ public class Main
 	
 
 	public Main() {
+		
 		final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		
 		modEventBus.addListener(this::setup);
 		modEventBus.addListener(this::doClientStuff);
 		
@@ -75,7 +74,7 @@ public class Main
 		
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(ModItems.TEA_LEAVES.get());
+				return new ItemStack(ModItems.BLUEBERRY_TEA.get());
 			}
 		};
 

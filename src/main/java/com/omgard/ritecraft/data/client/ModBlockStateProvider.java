@@ -5,6 +5,7 @@ import com.omgard.ritecraft.init.ModBlocks;
 
 import net.minecraft.block.LogBlock;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ExistingFileHelper;
 
@@ -26,6 +27,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		logBlock((LogBlock) ModBlocks.MUTATED_FIR_LOG.get());
 		logBlock((LogBlock) ModBlocks.ASTRAL_LOG.get());
 		simpleBlock(ModBlocks.ASTRAL_DIRT.get());
+		//fenceBlock(ModBlocks.MUTATED_FIR_FENCE.get(), new ResourceLocation(Main.MOD_ID + ":block/mutated_fir_planks"));
 		
 		
 		
