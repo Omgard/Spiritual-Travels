@@ -5,7 +5,6 @@ import com.omgard.ritecraft.init.ModBlocks;
 
 import net.minecraft.block.LogBlock;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ExistingFileHelper;
 

@@ -1,9 +1,17 @@
+package com.omgard.ritecraft.client.entity.model;
 // Made with Blockbench 3.7.4
 // Exported for Minecraft version 1.15
 // Paste this class into your mod and generate all required imports
 
+import com.mojang.blaze3d.matrix.MatrixStack;
+import com.mojang.blaze3d.vertex.IVertexBuilder;
 
-public class custom_model extends EntityModel<Entity> {
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.entity.Entity;
+import net.minecraft.util.math.MathHelper;
+
+public class BearModel extends EntityModel<Entity> {
 	private final ModelRenderer head;
 	private final ModelRenderer body;
 	private final ModelRenderer rotation;
@@ -13,7 +21,7 @@ public class custom_model extends EntityModel<Entity> {
 	private final ModelRenderer leg3;
 	private final ModelRenderer leg4;
 
-	public custom_model() {
+	public BearModel() {
 		textureWidth = 128;
 		textureHeight = 64;
 
@@ -59,7 +67,12 @@ public class custom_model extends EntityModel<Entity> {
 
 	@Override
 	public void setRotationAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
-		//previously the render function, render code was moved to a method below
+        this.head.rotateAngleX = headPitch * ((float)Math.PI / 180F);
+        this.head.rotateAngleY = netHeadYaw * ((float)Math.PI / 180F);
+        this.leg2.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+        this.leg1.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.leg4.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.4F * limbSwingAmount;
+        this.leg3.rotateAngleX = MathHelper.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
 	}
 
 	@Override
@@ -77,4 +90,6 @@ public class custom_model extends EntityModel<Entity> {
 		modelRenderer.rotateAngleY = y;
 		modelRenderer.rotateAngleZ = z;
 	}
+
+
 }

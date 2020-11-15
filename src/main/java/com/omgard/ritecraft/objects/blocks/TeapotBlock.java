@@ -212,7 +212,7 @@ public class TeapotBlock extends Block {
 	                     itemstack.shrink(1);
 					}
 					this.setLevel(worldIn, pos, state, 4);
-					//updateState(worldIn, pos, state, teaTimer);
+					
 					
 				 }	
 				 return ActionResultType.SUCCESS;
@@ -250,7 +250,4 @@ public class TeapotBlock extends Block {
 			}
 		}
 	}
-	//protected void updateState(World worldIn, BlockPos pos, BlockState state, int teaState) {
-		//worldIn.getPendingBlockTicks().scheduleTick(new BlockPos(pos), this, 80);
-	//}
 }
