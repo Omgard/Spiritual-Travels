@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ritecraft:mutated_ingot_block"
+    }
+  ],
+  "result": {
+    "item": "ritecraft:mutated_ingot",
+    "count": 9
+  }
+}

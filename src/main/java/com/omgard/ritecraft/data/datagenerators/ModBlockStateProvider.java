@@ -1,4 +1,4 @@
-package com.omgard.ritecraft.data.client;
+package com.omgard.ritecraft.data.datagenerators;
 
 import com.omgard.ritecraft.Main;
 import com.omgard.ritecraft.init.ModBlocks;
@@ -15,10 +15,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		super(gen, Main.MOD_ID, exFileHelper);
 		
 	}
+	
 
+	
 	
 	@Override
 	protected void registerStatesAndModels() {
+		
 		simpleBlock(ModBlocks.DARK_DIRT.get());
 		simpleBlock(ModBlocks.MUTATED_FIR_PLANKS.get());
 		simpleBlock(ModBlocks.MUTATED_FIR_LEAVES.get());
@@ -26,12 +29,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		logBlock((LogBlock) ModBlocks.MUTATED_FIR_LOG.get());
 		logBlock((LogBlock) ModBlocks.ASTRAL_LOG.get());
 		simpleBlock(ModBlocks.ASTRAL_DIRT.get());
-		//fenceBlock(ModBlocks.MUTATED_FIR_FENCE.get(), new ResourceLocation(Main.MOD_ID + ":block/mutated_fir_planks"));
 		
 		
 		
 		
 		
 	} 
+	
+	@Override
+	public String getName() {
+		return Main.MOD_ID + ": States and Models";
+	}
 
 }

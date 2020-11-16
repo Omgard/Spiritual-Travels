@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ritecraft",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "ritecraft:mutated_ingot"
+    }
+  },
+  "result": {
+    "item": "ritecraft:mutated_ingot_block"
+  }
+}

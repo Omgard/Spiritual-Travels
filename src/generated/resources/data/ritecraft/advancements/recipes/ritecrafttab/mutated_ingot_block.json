@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "ritecraft:mutated_ingot_block"
+    ]
+  },
+  "criteria": {
+    "mutated_ingot_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ritecraft:mutated_ingot_block"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "ritecraft:mutated_ingot_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mutated_ingot_block",
+      "has_the_recipe"
+    ]
+  ]
+}

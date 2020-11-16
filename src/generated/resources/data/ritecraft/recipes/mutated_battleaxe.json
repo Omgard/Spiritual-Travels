@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ritecraft",
+  "pattern": [
+    "xxx",
+    "xsx",
+    " s "
+  ],
+  "key": {
+    "x": {
+      "item": "ritecraft:mutated_ingot"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "ritecraft:mutated_battleaxe"
+  }
+}

@@ -1,4 +1,4 @@
-package com.omgard.ritecraft.data.client;
+package com.omgard.ritecraft.data.datagenerators;
 
 import javax.annotation.Nonnull;
 
@@ -84,7 +84,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 	@Nonnull
 	@Override
 	public String getName() {
-		return "Item Models: " + modid;
+		return Main.MOD_ID + ": Item Models" ;
 	}
 
 }

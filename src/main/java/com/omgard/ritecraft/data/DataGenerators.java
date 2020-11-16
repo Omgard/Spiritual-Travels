@@ -1,8 +1,13 @@
 package com.omgard.ritecraft.data;
 
 import com.omgard.ritecraft.Main;
-import com.omgard.ritecraft.data.client.ModBlockStateProvider;
-import com.omgard.ritecraft.data.client.ModItemModelProvider;
+import com.omgard.ritecraft.data.datagenerators.LangProvider;
+import com.omgard.ritecraft.data.datagenerators.ModBlockStateProvider;
+import com.omgard.ritecraft.data.datagenerators.ModBlockTagsProvider;
+import com.omgard.ritecraft.data.datagenerators.ModItemModelProvider;
+import com.omgard.ritecraft.data.datagenerators.ModItemTagsProvider;
+import com.omgard.ritecraft.data.datagenerators.ModLootTables;
+import com.omgard.ritecraft.data.datagenerators.ModRecipes;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ExistingFileHelper;
@@ -21,9 +26,18 @@ public final class DataGenerators {
     	
         DataGenerator gen = event.getGenerator();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-
-        gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
-        gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
+        
+        if(event.includeClient()) {
+        	gen.addProvider(new LangProvider(gen));
+        	gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
+            gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
+        }
+        if(event.includeServer()) {
+            gen.addProvider(new ModRecipes(gen));
+            gen.addProvider(new ModLootTables(gen)); 
+            gen.addProvider(new ModItemTagsProvider(gen));
+            gen.addProvider(new ModBlockTagsProvider(gen));
+        }
 
        // ModBlockTagsProvider blockTags = new ModBlockTagsProvider(gen, existingFileHelper);
         //gen.addProvider(blockTags);
