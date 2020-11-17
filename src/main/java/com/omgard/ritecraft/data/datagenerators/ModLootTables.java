@@ -18,6 +18,7 @@ public class ModLootTables extends ModBaseLootTables {
 		// BLOCKS
 		// lootTables.put(ModBlocks..get(), createStandardTable("", ModBlocks..get()));
 		lootTables.put(ModBlocks.ASTRAL_DIRT.get(), createStandardTable("astral_dirt", ModBlocks.ASTRAL_DIRT.get()));
+		lootTables.put(ModBlocks.ASTRAL_PLANKS.get(), createStandardTable("astral_planks", ModBlocks.ASTRAL_PLANKS.get()));
 		lootTables.put(ModBlocks.ASTRAL_LOG.get(), createStandardTable("astral_log", ModBlocks.ASTRAL_LOG.get()));
 		lootTables.put(ModBlocks.BLUESHROOM.get(), createStandardTable("blueshroom", ModBlocks.BLUESHROOM.get()));
 		lootTables.put(ModBlocks.COMMON_BLUELEAF.get(), createStandardTable("common_blueleaf", ModBlocks.COMMON_BLUELEAF.get()));
@@ -36,7 +37,10 @@ public class ModLootTables extends ModBaseLootTables {
 		lootTables.put(ModBlocks.SEESHROOM.get(), createStandardTable("seeshroom", ModBlocks.SEESHROOM.get()));
 		lootTables.put(ModBlocks.STONESHROOM.get(), createStandardTable("stoneshroom", ModBlocks.STONESHROOM.get()));
 		lootTables.put(ModBlocks.TEAPOT.get(), createStandardTable("teapot", ModBlocks.TEAPOT.get()));
-		
+		lootTables.put(ModBlocks.ASTRAL_FENCE.get(), createStandardTable("astral_planks", ModBlocks.ASTRAL_FENCE.get()));
+		lootTables.put(ModBlocks.ASTRAL_PRESSURE_PLATE.get(), createStandardTable("astral_pressure_plate", ModBlocks.ASTRAL_PRESSURE_PLATE.get()));
+		lootTables.put(ModBlocks.ASTRAL_SAPLING.get(), createStandardTable("astral_sapling", ModBlocks.ASTRAL_SAPLING.get()));
+		lootTables.put(ModBlocks.ASTRAL_BUTTON.get(), createStandardTable("astral_button", ModBlocks.ASTRAL_BUTTON.get()));
 		
 	}
 	

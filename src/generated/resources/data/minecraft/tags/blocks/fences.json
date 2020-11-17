@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ritecraft:mutated_fir_fence"
+    "ritecraft:mutated_fir_fence",
+    "ritecraft:astral_fence"
   ]
 }

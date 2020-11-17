@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "ritecraft:block/astral_slab_top"
+    },
+    "type=bottom": {
+      "model": "ritecraft:block/astral_slab"
+    },
+    "type=double": {
+      "model": "ritecraft:block/astral_planks"
+    }
+  }
+}

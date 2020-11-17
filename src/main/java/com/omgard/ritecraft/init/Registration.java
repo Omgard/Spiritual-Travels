@@ -38,7 +38,7 @@ public class Registration {
         ENTITY_TYPES.register(modEventBus);
         Main.LOGGER.info("Registered Entities!");       
         //BIOMES.register(modEventBus);
-        //Main.LOGGER.info("Registered Dimensions!");
+        //Main.LOGGER.info("Registered Biomes!");
         MOD_DIMENSIONS.register(modEventBus);
         Main.LOGGER.info("Registered Dimensions!");
         
@@ -62,6 +62,7 @@ public class Registration {
 		RenderTypeLookup.setRenderLayer(ModBlocks.MUTATED_ELKSBLOOM.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.MOONWEED.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.COMMON_BLUELEAF.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.ASTRAL_DOOR.get(), RenderType.getCutout());
     	
     }
     

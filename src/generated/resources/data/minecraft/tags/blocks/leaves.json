@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ritecraft:mutated_fir_leaves"
+    "ritecraft:mutated_fir_leaves",
+    "ritecraft:astral_leaves"
   ]
 }

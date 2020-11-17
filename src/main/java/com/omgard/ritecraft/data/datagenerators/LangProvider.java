@@ -24,14 +24,30 @@ public class LangProvider extends LanguageProvider
     	add(ModBlocks.ASTRAL_DIRT.get(), "Astral Dirt");
     	add(ModBlocks.ASTRAL_GRASS_BLOCK.get(), "Astral Grass block");
     	add(ModBlocks.ASTRAL_LOG.get(), "Astral Log");
+    	add(ModBlocks.ASTRAL_STAIRS.get(), "Astral Stairs");
+    	add(ModBlocks.ASTRAL_PLANKS.get(), "Astral Planks");
+    	add(ModBlocks.ASTRAL_LEAVES.get(), "Astral Leaves");
+    	add(ModBlocks.ASTRAL_PRESSURE_PLATE.get(), "Astral Pressure Plate");
+    	add(ModBlocks.ASTRAL_SAPLING.get(), "Astral Sapling");
+    	add(ModBlocks.ASTRAL_FENCE.get(), "Astral Fence");
+    	add(ModBlocks.ASTRAL_BUTTON.get(), "Astral Button");
+    	add(ModBlocks.ASTRAL_SLAB.get(), "Astral Slab");
+    	add(ModBlocks.ASTRAL_DOOR.get(), "Astral Door");
+    	add(ModBlocks.ASTRAL_FENCE_GATE.get(), "Astral Fence Gate");
+    	
     	add(ModBlocks.BLUEBERRY_BUSH_BLOCK.get(), "Blueberry Bush");
     	add(ModBlocks.BLUESHROOM.get(), "Blueshroom");
     	add(ModBlocks.COMMON_BLUELEAF.get(), "Common Blueleaf");
-    	add(ModBlocks.DARK_DIRT.get(), "Dark Dirt");
-    	add(ModBlocks.DARK_GRASS_BLOCK.get(), "Dark Grass Block");
     	add(ModBlocks.ELKSBLOOM.get(), "Elksbloom");
     	add(ModBlocks.MOONWEED.get(), "Moonweed");
     	add(ModBlocks.MUTATED_ELKSBLOOM.get(), "Mutated Elksbloom");
+    	add(ModBlocks.SEESHROOM.get(), "Seeshroom");
+    	add(ModBlocks.STONESHROOM.get(), "Stoneshroom");
+    	
+    	add(ModBlocks.TEAPOT.get(), "Teapot");
+    	add(ModBlocks.DARK_DIRT.get(), "Dark Dirt");
+    	add(ModBlocks.DARK_GRASS_BLOCK.get(), "Dark Grass Block");
+    	
     	add(ModBlocks.MUTATED_FIR_BUTTON.get(), "Mutated Fir Button");
     	add(ModBlocks.MUTATED_FIR_FENCE.get(), "Mutated Fir Fence");
     	add(ModBlocks.MUTATED_FIR_LEAVES.get(), "Mutated Fir Leaves");
@@ -41,9 +57,10 @@ public class LangProvider extends LanguageProvider
     	add(ModBlocks.MUTATED_FIR_SAPLING.get(), "Mutated Fir Sapling");
     	add(ModBlocks.MUTATED_FIR_STAIRS.get(), "Mutated Fir Stairs");
     	add(ModBlocks.MUTATED_INGOT_BLOCK.get(), "Mutated Ingot Block");
-    	add(ModBlocks.SEESHROOM.get(), "Seeshroom");
-    	add(ModBlocks.STONESHROOM.get(), "Stoneshroom");
-    	add(ModBlocks.TEAPOT.get(), "Teapot");
+    	add(ModBlocks.MUTATED_FIR_SLAB.get(), "Mutated Fir Slab");
+    	add(ModBlocks.MUTATED_FIR_FENCE_GATE.get(), "Mutated Fir Fence Gate");
+    	
+    	
     	
     	
     	// ITEMS

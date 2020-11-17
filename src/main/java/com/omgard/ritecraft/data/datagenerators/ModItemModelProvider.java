@@ -20,21 +20,36 @@ public class ModItemModelProvider extends ItemModelProvider {
 
 		// Block Items
 		withExistingParent("dark_dirt", modLoc("block/dark_dirt"));
-		withExistingParent("astral_dirt", modLoc("block/astral_dirt"));
 		withExistingParent("dark_grass_block", modLoc("block/dark_grass_block"));
-		withExistingParent("astral_grass_block", modLoc("block/astral_grass_block"));
-		withExistingParent("mutated_fir_log", modLoc("block/mutated_fir_log"));
-		withExistingParent("astral_log", modLoc("block/astral_log"));
-		withExistingParent("mutated_fir_planks", modLoc("block/mutated_fir_planks"));
-		withExistingParent("mutated_fir_leaves", modLoc("block/mutated_fir_leaves"));
+		
 		withExistingParent("blueshroom", modLoc ("block/blueshroom"));
 		withExistingParent("seeshroom", modLoc ("block/seeshroom"));
 		withExistingParent("stoneshroom", modLoc ("block/stoneshroom"));
 		withExistingParent("elksbloom", modLoc ("block/elksbloom"));
+		
 		withExistingParent("mutated_elksbloom", modLoc ("block/mutated_elksbloom"));
 		withExistingParent("mutated_fir_stairs", modLoc ("block/mutated_fir_stairs"));
+		withExistingParent("mutated_fir_log", modLoc("block/mutated_fir_log"));
+		withExistingParent("mutated_fir_planks", modLoc("block/mutated_fir_planks"));
+		withExistingParent("mutated_fir_leaves", modLoc("block/mutated_fir_leaves"));
+		withExistingParent("mutated_fir_slab", modLoc("block/mutated_fir_slab"));
+		withExistingParent("mutated_fir_fence", modLoc ("block/mutated_fir_fence_inventory"));
+		withExistingParent("mutated_fir_fence_gate", modLoc ("block/mutated_fir_fence_gate"));
 		
-		//pls add texture withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
+		withExistingParent("astral_button", modLoc ("block/astral_button_inventory"));
+		withExistingParent("astral_leaves", modLoc("block/astral_leaves"));
+		withExistingParent("astral_dirt", modLoc("block/astral_dirt"));
+		withExistingParent("astral_log", modLoc("block/astral_log"));
+		withExistingParent("astral_stairs", modLoc("block/astral_stairs"));
+		withExistingParent("astral_slab", modLoc("block/astral_slab"));
+		withExistingParent("astral_planks", modLoc("block/astral_planks"));
+		withExistingParent("astral_grass_block", modLoc("block/astral_grass_block"));
+		withExistingParent("astral_fence", modLoc ("block/astral_fence_inventory"));
+		withExistingParent("astral_fence_gate", modLoc ("block/astral_fence_gate"));
+		withExistingParent("astral_pressure_plate", modLoc ("block/astral_pressure_plate"));
+		//withExistingParent("astral_sapling", modLoc ("block/astral_sapling"));
+		
+		withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
 
 		// Model files
 		ModelFile itemGenerated = getExistingFile(mcLoc("item/generated"));
@@ -74,6 +89,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "deer_leather");
 		builder(itemGenerated, "ruined_elk_antler");
 		builder(itemGenerated, "moon_leather");
+		//builder(itemGenerated, "astral_door");
 
 	}
 

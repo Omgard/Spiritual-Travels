@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ritecraft:mutated_fir_sapling"
+    "ritecraft:mutated_fir_sapling",
+    "ritecraft:astral_sapling"
   ]
 }

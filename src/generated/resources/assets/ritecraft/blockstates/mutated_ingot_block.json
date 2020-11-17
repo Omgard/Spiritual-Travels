@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ritecraft:block/mutated_ingot_block"
+    }
+  }
+}
