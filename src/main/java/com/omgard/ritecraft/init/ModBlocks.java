@@ -66,6 +66,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> MUTATED_FIR_SAPLING = registerWithItem("mutated_fir_sapling", () -> new ModSaplingBlock(() ->  new MutatedFirTree(), Block.Properties.from(Blocks.OAK_SAPLING)));	
 	public static final RegistryObject<SlabBlock> MUTATED_FIR_SLAB = registerWithItem("mutated_fir_slab", () -> new SlabBlock(Block.Properties.from(MUTATED_FIR_PLANKS.get())));
 	public static final RegistryObject<FenceGateBlock> MUTATED_FIR_FENCE_GATE = registerWithItem("mutated_fir_fence_gate", () -> new FenceGateBlock(Block.Properties.from(MUTATED_FIR_PLANKS.get())));
+	public static final RegistryObject<DoorBlock> MUTATED_FIR_DOOR = registerWithItem("mutated_fir_door", () -> new ModDoor(Block.Properties.from(Blocks.OAK_DOOR)));
+	public static final RegistryObject<TrapDoorBlock> MUTATED_FIR_TRAPDOOR = registerWithItem("mutated_fir_trapdoor", () -> new ModTrapDoor(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
 
 	public static final RegistryObject<Block> ASTRAL_PLANKS = registerWithItem("astral_planks", () -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));	
 	public static final RegistryObject<Block> ASTRAL_GRASS_BLOCK = registerWithItem("astral_grass_block", () -> new Block(Block.Properties.from(Blocks.GRASS_BLOCK)));

@@ -48,6 +48,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 		withExistingParent("astral_fence_gate", modLoc ("block/astral_fence_gate"));
 		withExistingParent("astral_pressure_plate", modLoc ("block/astral_pressure_plate"));
 		//withExistingParent("astral_sapling", modLoc ("block/astral_sapling"));
+		//withExistingParent("astral_trapdoor", modLoc("block/astral_trapdoor"));
+		//withExistingParent("mutated_fir_trapdoor", modLoc("block/mutated_fir_trapdoor"));
 		
 		withExistingParent("mutated_ingot_block", modLoc("block/mutated_ingot_block"));
 
@@ -90,6 +92,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 		builder(itemGenerated, "ruined_elk_antler");
 		builder(itemGenerated, "moon_leather");
 		//builder(itemGenerated, "astral_door");
+		//builder(itemGenerated, "mutated_fir_door");
 
 	}
 
