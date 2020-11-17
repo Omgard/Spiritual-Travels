@@ -44,7 +44,7 @@ public class ModBlocks {
 
 	public static final RegistryObject<BushBlock> BLUEBERRY_BUSH_BLOCK = registerWithItem("blueberry_bush_block", () -> new BlueberryBushBlock(Block.Properties.from(Blocks.SWEET_BERRY_BUSH)));
 	
-	public static final RegistryObject<Block> TEAPOT = registerWithItem("teapot", ()-> new TeapotBlock(Block.Properties.create(Material.CLAY)));
+	public static final RegistryObject<Block> TEAPOT = registerWithItem("teapot", ()-> new TeapotBlock(Block.Properties.from(Blocks.FLOWER_POT)));
 
 	public static final RegistryObject<Block> BLUESHROOM = registerWithItem("blueshroom", () -> new ModBushBlock(Block.Properties.from(Blocks.BROWN_MUSHROOM)));
 	
@@ -64,13 +64,13 @@ public class ModBlocks {
 
 	public static final RegistryObject<Block> MUTATED_FIR_LOG = registerWithItem("mutated_fir_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
 	
-	public static final RegistryObject<Block> MUTATED_FIR_STAIRS = registerWithItem("mutated_fir_stairs", () -> new StairsBlock(() -> MUTATED_FIR_PLANKS.get().getDefaultState(), Block.Properties.create(Material.WOOD)));
+	public static final RegistryObject<Block> MUTATED_FIR_STAIRS = registerWithItem("mutated_fir_stairs", () -> new StairsBlock(() -> MUTATED_FIR_PLANKS.get().getDefaultState(), Block.Properties.from(Blocks.OAK_PLANKS)));
 
-	public static final RegistryObject<FenceBlock> MUTATED_FIR_FENCE = registerWithItem("mutated_fir_fence", () -> new FenceBlock(Block.Properties.create(Material.WOOD)));
+	public static final RegistryObject<FenceBlock> MUTATED_FIR_FENCE = registerWithItem("mutated_fir_fence", () -> new FenceBlock(Block.Properties.from(Blocks.OAK_FENCE)));
 	
-	public static final RegistryObject<Block> MUTATED_FIR_BUTTON = registerWithItem("mutated_fir_button", () -> new ModWoodButtonBlock(Block.Properties.create(Material.WOOD)));
+	public static final RegistryObject<Block> MUTATED_FIR_BUTTON = registerWithItem("mutated_fir_button", () -> new ModWoodButtonBlock(Block.Properties.from(Blocks.OAK_BUTTON)));
 	
-	public static final RegistryObject<Block> MUTATED_FIR_PRESSURE_PLATE = registerWithItem("mutated_fir_pressure_plate", () -> new ModPressurePlateBlock(Sensitivity.EVERYTHING, Block.Properties.create(Material.WOOD)));	
+	public static final RegistryObject<Block> MUTATED_FIR_PRESSURE_PLATE = registerWithItem("mutated_fir_pressure_plate", () -> new ModPressurePlateBlock(Sensitivity.EVERYTHING, Block.Properties.from(Blocks.OAK_PRESSURE_PLATE)));	
 	
 	public static final RegistryObject<Block> MUTATED_FIR_LEAVES = registerWithItem("mutated_fir_leaves", () -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
 

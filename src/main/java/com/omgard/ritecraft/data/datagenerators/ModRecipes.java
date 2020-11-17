@@ -45,7 +45,13 @@ public class ModRecipes extends RecipeProvider {
         ShapelessRecipeBuilder.shapelessRecipe(ModItems.MUTATED_INGOT.get(), 9)
         		.addIngredient(ModBlocks.MUTATED_INGOT_BLOCK.get())
                 .addCriterion("mutated_ingot", InventoryChangeTrigger.Instance.forItems(ModItems.MUTATED_INGOT.get()))
-        		.build(consumer);
+        		.build(consumer, Main.MOD_ID + ":mutated_ingot_from_block");
+        
+        ShapelessRecipeBuilder.shapelessRecipe(ModItems.MUTATED_INGOT.get(), 1)
+		.addIngredient(ModBlocks.MUTATED_ELKSBLOOM.get())
+		.addIngredient(Items.IRON_INGOT)
+        .addCriterion("mutated_elksbloom", InventoryChangeTrigger.Instance.forItems(ModBlocks.MUTATED_ELKSBLOOM.get()))
+		.build(consumer);
     }
     
     @Override

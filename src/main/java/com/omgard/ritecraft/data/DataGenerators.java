@@ -33,14 +33,10 @@ public final class DataGenerators {
             gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
         }
         if(event.includeServer()) {
-            gen.addProvider(new ModRecipes(gen));
-            gen.addProvider(new ModLootTables(gen)); 
             gen.addProvider(new ModItemTagsProvider(gen));
             gen.addProvider(new ModBlockTagsProvider(gen));
+            gen.addProvider(new ModRecipes(gen));
+            gen.addProvider(new ModLootTables(gen)); 
         }
-
-       // ModBlockTagsProvider blockTags = new ModBlockTagsProvider(gen, existingFileHelper);
-        //gen.addProvider(blockTags);
-        //gen.addProvider(new ModItemTagsProvider(gen, blockTags, existingFileHelper));
     }
 }

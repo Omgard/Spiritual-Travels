@@ -1,5 +1,6 @@
 package com.omgard.ritecraft.objects.entities;
 
+import com.omgard.ritecraft.Main;
 import com.omgard.ritecraft.init.ModEntityTypes;
 import com.omgard.ritecraft.init.ModSounds;
 
@@ -23,6 +24,7 @@ import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
@@ -41,6 +43,7 @@ public class WarthogEntity extends AnimalEntity {
 	public WarthogEntity(EntityType<? extends AnimalEntity> type, World worldIn) {
 		super(type, worldIn);
 	}
+
 	
 	@Override
 	protected void registerAttributes() {
@@ -62,6 +65,11 @@ public class WarthogEntity extends AnimalEntity {
 		this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, 6.0F));
 		this.goalSelector.addGoal(7, new LookRandomlyGoal(this));
 		
+	}
+	
+	@Override
+	protected ResourceLocation getLootTable() {
+		return new ResourceLocation(Main.MOD_ID+":entities/warthog.json");
 	}
 	
 	@Override

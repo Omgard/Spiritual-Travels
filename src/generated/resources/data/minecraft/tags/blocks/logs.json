@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ritecraft:astral_log"
+    "ritecraft:astral_log",
+    "ritecraft:mutated_fir_log"
   ]
 }

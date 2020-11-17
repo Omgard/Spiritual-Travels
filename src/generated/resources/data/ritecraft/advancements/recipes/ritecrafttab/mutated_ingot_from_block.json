@@ -2,16 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "ritecraft:mutated_ingot"
+      "ritecraft:mutated_ingot_from_block"
     ]
   },
   "criteria": {
-    "mutated_elksbloom": {
+    "mutated_ingot": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "ritecraft:mutated_elksbloom"
+            "item": "ritecraft:mutated_ingot"
           }
         ]
       }
@@ -19,13 +19,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "ritecraft:mutated_ingot"
+        "recipe": "ritecraft:mutated_ingot_from_block"
       }
     }
   },
   "requirements": [
     [
-      "mutated_elksbloom",
+      "mutated_ingot",
       "has_the_recipe"
     ]
   ]

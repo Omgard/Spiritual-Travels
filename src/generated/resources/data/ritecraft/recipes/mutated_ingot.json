@@ -2,11 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "ritecraft:mutated_ingot_block"
+      "item": "ritecraft:mutated_elksbloom"
+    },
+    {
+      "item": "minecraft:iron_ingot"
     }
   ],
   "result": {
-    "item": "ritecraft:mutated_ingot",
-    "count": 9
+    "item": "ritecraft:mutated_ingot"
   }
 }
