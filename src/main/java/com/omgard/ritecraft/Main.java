@@ -3,12 +3,15 @@ package com.omgard.ritecraft;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.omgard.ritecraft.init.ModBiomes;
 import com.omgard.ritecraft.init.ModItems;
 import com.omgard.ritecraft.init.Registration;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -51,6 +54,11 @@ public class Main
 		
 		Registration.setRender();
 		
+	}
+	
+	@SubscribeEvent
+	public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event) {
+		ModBiomes.registerBiomes();
 	}
 	
 	@SubscribeEvent

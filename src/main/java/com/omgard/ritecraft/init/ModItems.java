@@ -7,7 +7,10 @@ import com.omgard.ritecraft.util.enums.ModArmorMaterial;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.item.BlockNamedItem;
+import net.minecraft.item.Foods;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 
 public class ModItems {
@@ -15,7 +18,7 @@ public class ModItems {
 	// Items
 	public static final RegistryObject<Item> TEA_LEAVES = Registration.ITEMS.register("tea_leaves", ItemBase::new);
 	public static final RegistryObject<Item> WARTHOG_TUSK = Registration.ITEMS.register("warthog_tusk", ItemBase::new);
-	public static final RegistryObject<Item> BLUEBERRY = Registration.ITEMS.register("blueberry", ItemBase::new);
+	public static final RegistryObject<Item> BLUEBERRY = Registration.ITEMS.register("blueberry", ()-> new BlockNamedItem(ModBlocks.BLUEBERRY_BUSH_BLOCK.get(), (new Item.Properties()).group(ItemGroup.FOOD).food(Foods.SWEET_BERRIES)));
 	public static final RegistryObject<Item> OWL_FEATHER = Registration.ITEMS.register("owl_feather", ItemBase::new);
 	public static final RegistryObject<Item> EMPTY_CUP = Registration.ITEMS.register("empty_cup", ItemBase::new);
 	public static final RegistryObject<Item> BLUEBERRY_TEA = Registration.ITEMS.register("blueberry_tea", CupOfTea::new);

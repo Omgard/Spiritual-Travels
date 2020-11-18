@@ -9,7 +9,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.SoundEvent;
-import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.ModDimension;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -18,9 +17,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class Registration {
 	
+	
 	public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, Main.MOD_ID);
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, Main.MOD_ID);
-	public static final DeferredRegister<Biome> BIOMES = new DeferredRegister<>(ForgeRegistries.BIOMES, Main.MOD_ID);
 	public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.ENTITIES, Main.MOD_ID);
 	public static final DeferredRegister<TileEntityType<?>> TILE_ENTITY_TYPES = new DeferredRegister<>(ForgeRegistries.TILE_ENTITIES, Main.MOD_ID);
 	public static final DeferredRegister<SoundEvent> SOUNDS = new DeferredRegister<>(ForgeRegistries.SOUND_EVENTS, Main.MOD_ID);
@@ -37,7 +36,7 @@ public class Registration {
         Main.LOGGER.info("Registered Items!");
         ENTITY_TYPES.register(modEventBus);
         Main.LOGGER.info("Registered Entities!");       
-        //BIOMES.register(modEventBus);
+        //ModBiomes.BIOMES.register(modEventBus);
         //Main.LOGGER.info("Registered Biomes!");
         MOD_DIMENSIONS.register(modEventBus);
         Main.LOGGER.info("Registered Dimensions!");
@@ -45,7 +44,6 @@ public class Registration {
         ModSounds.register();
         ModBlocks.register();
         ModItems.register();
-        ModBiomes.register();
         ModDimensions.register();
         ModEntityTypes.register();
 

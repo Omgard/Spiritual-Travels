@@ -18,11 +18,11 @@ public class ProjectedForestBiomeProvider extends BiomeProvider {
 		rand = new Random();
 	}
 
-	private static final Set<Biome> biomeList = ImmutableSet.of(ModBiomes.PROJECTED_FOREST_BIOME.get());
+	private static final Set<Biome> biomeList = ImmutableSet.of(ModBiomes.PROJECTED_FOREST.get());
 
 	@Override
 	public Biome getNoiseBiome(int x, int y, int z) {
-		return ModBiomes.PROJECTED_FOREST_BIOME.get();
+		return ModBiomes.PROJECTED_FOREST.get();
 	}
 
 }

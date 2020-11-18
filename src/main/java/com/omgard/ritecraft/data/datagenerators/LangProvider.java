@@ -34,6 +34,7 @@ public class LangProvider extends LanguageProvider
     	add(ModBlocks.ASTRAL_SLAB.get(), "Astral Slab");
     	add(ModBlocks.ASTRAL_DOOR.get(), "Astral Door");
     	add(ModBlocks.ASTRAL_FENCE_GATE.get(), "Astral Fence Gate");
+    	add(ModBlocks.ASTRAL_TRAPDOOR.get(), "Astral Trapdoor");
     	
     	add(ModBlocks.BLUEBERRY_BUSH_BLOCK.get(), "Blueberry Bush");
     	add(ModBlocks.BLUESHROOM.get(), "Blueshroom");
@@ -59,6 +60,8 @@ public class LangProvider extends LanguageProvider
     	add(ModBlocks.MUTATED_INGOT_BLOCK.get(), "Mutated Ingot Block");
     	add(ModBlocks.MUTATED_FIR_SLAB.get(), "Mutated Fir Slab");
     	add(ModBlocks.MUTATED_FIR_FENCE_GATE.get(), "Mutated Fir Fence Gate");
+    	add(ModBlocks.MUTATED_FIR_TRAPDOOR.get(), "Mutated Fir Trapdoor");
+    	add(ModBlocks.MUTATED_FIR_DOOR.get(), "Mutated Fir Door");
     	
     	
     	

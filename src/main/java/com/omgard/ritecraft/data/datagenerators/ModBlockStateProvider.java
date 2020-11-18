@@ -37,9 +37,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 		fenceGateBlock(ModBlocks.ASTRAL_FENCE_GATE.get(), new ResourceLocation(Main.MOD_ID+":block/astral_planks"));
 		fenceGateBlock(ModBlocks.MUTATED_FIR_FENCE_GATE.get(), new ResourceLocation(Main.MOD_ID+":block/mutated_fir_planks"));
 		doorBlock(ModBlocks.ASTRAL_DOOR.get(), new ResourceLocation(Main.MOD_ID+":block/astral_door_bottom"), new ResourceLocation(Main.MOD_ID+":block/astral_door_top"));
-		doorBlock(ModBlocks.MUTATED_FIR_DOOR.get(), new ResourceLocation(Main.MOD_ID+":block/mutated_fir_door_bottom"), new ResourceLocation(Main.MOD_ID+":block/mutated_fir_door_top"));
+		//doorBlock(ModBlocks.MUTATED_FIR_DOOR.get(), new ResourceLocation(Main.MOD_ID+":block/mutated_fir_door_bottom"), new ResourceLocation(Main.MOD_ID+":block/mutated_fir_door_top"));
 		//trapdoorBlock(ModBlocks.ASTRAL_TRAPDOOR.get(), new ResourceLocation(Main.MOD_ID + "block/astral_trapdoor"), true);
 		//trapdoorBlock(ModBlocks.MUTATED_FIR_TRAPDOOR.get(), new ResourceLocation(Main.MOD_ID + "block/mutated_fir_trapdoor"), true);
+		
 		
 		
 		

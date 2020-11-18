@@ -40,7 +40,8 @@ public class BlueberryBushBlock extends BushBlock implements IGrowable {
 		Block block = state.getBlock();
 		return block == Blocks.GRASS_BLOCK || block == Blocks.DIRT || block == Blocks.COARSE_DIRT
 				|| block == Blocks.PODZOL || block == Blocks.FARMLAND || block == ModBlocks.DARK_DIRT.get()
-				|| block == ModBlocks.DARK_GRASS_BLOCK.get();
+				|| block == ModBlocks.DARK_GRASS_BLOCK.get() || block == ModBlocks.ASTRAL_DIRT.get()
+				|| block == ModBlocks.ASTRAL_GRASS_BLOCK.get();
 	} 
 
 	public BlueberryBushBlock(Block.Properties properties) {

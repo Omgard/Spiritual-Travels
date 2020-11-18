@@ -34,6 +34,8 @@ import net.minecraftforge.fml.RegistryObject;
 
 public class ModBlocks {
 
+	   
+
 	// Blocks	
 	public static final RegistryObject<Block> MUTATED_INGOT_BLOCK = registerWithItem("mutated_ingot_block", () -> new Block(
 			Block.Properties.create(Material.IRON).hardnessAndResistance(3, 10).sound(SoundType.METAL)));
@@ -82,6 +84,7 @@ public class ModBlocks {
 	public static final RegistryObject<FenceGateBlock> ASTRAL_FENCE_GATE = registerWithItem("astral_fence_gate", () -> new FenceGateBlock(Block.Properties.from(ASTRAL_PLANKS.get())));
 	public static final RegistryObject<DoorBlock> ASTRAL_DOOR = registerWithItem("astral_door", () -> new ModDoor(Block.Properties.from(Blocks.OAK_DOOR)));
 	public static final RegistryObject<TrapDoorBlock> ASTRAL_TRAPDOOR = registerWithItem("astral_trapdoor", () -> new ModTrapDoor(Block.Properties.from(Blocks.OAK_TRAPDOOR)));
+
 	
 	
 
